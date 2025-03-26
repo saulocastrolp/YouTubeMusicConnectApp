@@ -1,3 +1,12 @@
+import java.util.Properties
+import java.io.FileInputStream
+
+val localProperties = Properties().apply {
+    load(FileInputStream(rootProject.file("local.properties")))
+}
+val youtubeApiKey = localProperties.getProperty("YOUTUBE_API_KEY") as String
+val googleClientKey = localProperties.getProperty("GOOGLE_CLIENT_KEY") as String
+
 plugins {
     id("com.android.application")
     kotlin("android")
@@ -23,10 +32,13 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField("String", "YOUTUBE_API_KEY", "\"$youtubeApiKey\"")
+        buildConfigField("String", "GOOGLE_CLIENT_KEY", "\"$googleClientKey\"")
     }
 
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 
     compileOptions {
