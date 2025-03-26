@@ -1,0 +1,154 @@
+[
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/mipmap-hdpi_ic_pause.png.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/mipmap-hdpi/ic_pause.png"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/drawable_ic_launcher_round.webp.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/drawable/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/drawable_thumb_up_24px.xml.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/drawable/thumb_up_24px.xml"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/mipmap-hdpi_ic_skip_next.png.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/mipmap-hdpi/ic_skip_next.png"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/drawable_notifications_active_24px.xml.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/drawable/notifications_active_24px.xml"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/drawable_pause_24px.xml.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/drawable/pause_24px.xml"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/mipmap-hdpi_ic_skip_previous.png.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/mipmap-hdpi/ic_skip_previous.png"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/xml_data_extraction_rules.xml.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/mipmap-hdpi_ic_like.png.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/mipmap-hdpi/ic_like.png"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/drawable_repeat_24px.xml.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/drawable/repeat_24px.xml"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/drawable_ic_music_placeholder.png.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/drawable/ic_music_placeholder.png"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/xml_network_security_config.xml.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/xml/network_security_config.xml"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/mipmap-hdpi_ic_dislike.png.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/mipmap-hdpi/ic_dislike.png"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/xml_backup_rules.xml.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/drawable_person.png.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/drawable/person.png"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/drawable_skip_next_24px.xml.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/drawable/skip_next_24px.xml"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/mipmap-hdpi_ic_play.png.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/mipmap-hdpi/ic_play.png"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/drawable_shuffle_24px.xml.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/drawable/shuffle_24px.xml"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/drawable_ic_launcher.webp.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/drawable/ic_launcher.webp"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/drawable_skip_previous_24px.xml.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/drawable/skip_previous_24px.xml"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/drawable_thumb_down_24px.xml.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/drawable/thumb_down_24px.xml"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/mipmap-hdpi_ic_music_placeholder.png.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/mipmap-hdpi/ic_music_placeholder.png"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/mipmap-hdpi_ic_repeat.png.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/mipmap-hdpi/ic_repeat.png"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/mipmap-hdpi_ic_shuffle.png.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/mipmap-hdpi/ic_shuffle.png"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/drawable_default_image.png.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/drawable/default_image.png"
+    },
+    {
+        "merged": "com.saulocastrodev.youtubemusicconnect.app-release-68:/drawable_play_arrow_24px.xml.flat",
+        "source": "com.saulocastrodev.youtubemusicconnect.app-main-69:/drawable/play_arrow_24px.xml"
+    }
+]

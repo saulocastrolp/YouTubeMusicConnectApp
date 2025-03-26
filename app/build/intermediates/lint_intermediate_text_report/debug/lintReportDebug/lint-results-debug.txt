@@ -1,0 +1,253 @@
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:21: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+        targetSdk = 34
+        ~~~~~~~~~~~~~~
+
+   Explanation for issues of type "OldTargetApi":
+   When your application runs on a version of Android that is more recent than
+   your targetSdkVersion specifies that it has been tested with, various
+   compatibility modes kick in. This ensures that your application continues
+   to work, but it may look out of place. For example, if the targetSdkVersion
+   is less than 14, your app may get an option button in the UI.
+
+   To fix this issue, set the targetSdkVersion to the highest available value.
+   Then test your app to make sure everything works correctly. You may want to
+   consult the compatibility notes to see what changes apply to each version
+   you are adding support for:
+   https://developer.android.com/reference/android/os/Build.VERSION_CODES.html
+   as well as follow this guide:
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml:2: Warning: A newer version of com.android.application than 8.9.0 is available: 8.9.1 [AndroidGradlePluginVersion]
+agp = "8.9.0"
+      ~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml:2: Warning: A newer version of com.android.application than 8.9.0 is available: 8.9.1 [AndroidGradlePluginVersion]
+agp = "8.9.0"
+      ~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml:2: Warning: A newer version of com.android.application than 8.9.0 is available: 8.9.1 [AndroidGradlePluginVersion]
+agp = "8.9.0"
+      ~~~~~~~
+
+   Explanation for issues of type "AndroidGradlePluginVersion":
+   This detector looks for usage of the Android Gradle Plugin where the
+   version you are using is not the current stable release. Using older
+   versions is fine, and there are cases where you deliberately want to stick
+   with an older version. However, you may simply not be aware that a more
+   recent version is available, and that is what this lint check helps find.
+
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:10: Warning: A newer version of com.google.gms:google-services than 4.3.15 is available: 4.4.2 [GradleDependency]
+        classpath("com.google.gms:google-services:4.3.15") // versão atual
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:51: Warning: A newer version of androidx.compose:compose-bom than 2024.03.00 is available: 2025.03.00 [GradleDependency]
+    implementation(platform("androidx.compose:compose-bom:2024.03.00"))
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:53: Warning: A newer version of androidx.compose.ui:ui-tooling-preview than 1.6.0 is available: 1.7.8 [GradleDependency]
+    implementation("androidx.compose.ui:ui-tooling-preview:1.6.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:55: Warning: A newer version of androidx.activity:activity-compose than 1.8.0 is available: 1.10.1 [GradleDependency]
+    implementation("androidx.activity:activity-compose:1.8.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:58: Warning: A newer version of androidx.navigation:navigation-compose than 2.7.7 is available: 2.8.9 [GradleDependency]
+    implementation("androidx.navigation:navigation-compose:2.7.7")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:68: Warning: A newer version of com.squareup.okhttp3:okhttp than 4.11.0 is available: 4.12.0 [GradleDependency]
+    implementation("com.squareup.okhttp3:okhttp:4.11.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:71: Warning: A newer version of com.google.android.gms:play-services-auth than 20.7.0 is available: 21.3.0 [GradleDependency]
+    implementation("com.google.android.gms:play-services-auth:20.7.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:78: Warning: A newer version of io.coil-kt:coil-compose than 2.4.0 is available: 2.5.0 [GradleDependency]
+    implementation("io.coil-kt:coil-compose:2.4.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:83: Warning: A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1 [GradleDependency]
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:84: Warning: A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1 [GradleDependency]
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:85: Warning: A newer version of androidx.compose.ui:ui-test-junit4 than 1.6.0 is available: 1.7.8 [GradleDependency]
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.6.0")
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:87: Warning: A newer version of com.google.android.material:material than 1.11.0 is available: 1.12.0 [GradleDependency]
+    implementation("com.google.android.material:material:1.11.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/xml/network_security_config.xml:6: Warning: Insecure Base Configuration [InsecureBaseConfiguration]
+    <base-config cleartextTrafficPermitted="true" />
+                                            ~~~~
+
+   Explanation for issues of type "InsecureBaseConfiguration":
+   Permitting cleartext traffic could allow eavesdroppers to intercept data
+   sent by your app, which impacts the privacy of your users. Consider only
+   allowing encrypted traffic by setting the cleartextTrafficPermitted tag to
+   "false".
+
+   https://goo.gle/InsecureBaseConfiguration
+   https://developer.android.com/preview/features/security-config.html
+
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/drawable/default_image.png: Warning: The resource R.drawable.default_image appears to be unused [UnusedResources]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/mipmap-hdpi/ic_dislike.png: Warning: The resource R.mipmap.ic_dislike appears to be unused [UnusedResources]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/mipmap-hdpi/ic_like.png: Warning: The resource R.mipmap.ic_like appears to be unused [UnusedResources]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/mipmap-hdpi/ic_music_placeholder.png: Warning: The resource R.mipmap.ic_music_placeholder appears to be unused [UnusedResources]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/mipmap-hdpi/ic_pause.png: Warning: The resource R.mipmap.ic_pause appears to be unused [UnusedResources]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/mipmap-hdpi/ic_play.png: Warning: The resource R.mipmap.ic_play appears to be unused [UnusedResources]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/mipmap-hdpi/ic_repeat.png: Warning: The resource R.mipmap.ic_repeat appears to be unused [UnusedResources]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/mipmap-hdpi/ic_shuffle.png: Warning: The resource R.mipmap.ic_shuffle appears to be unused [UnusedResources]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/mipmap-hdpi/ic_skip_next.png: Warning: The resource R.mipmap.ic_skip_next appears to be unused [UnusedResources]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/mipmap-hdpi/ic_skip_previous.png: Warning: The resource R.mipmap.ic_skip_previous appears to be unused [UnusedResources]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/drawable/notifications_active_24px.xml:1: Warning: The resource R.drawable.notifications_active_24px appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/drawable/pause_24px.xml:1: Warning: The resource R.drawable.pause_24px appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/drawable/play_arrow_24px.xml:1: Warning: The resource R.drawable.play_arrow_24px appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/drawable/repeat_24px.xml:1: Warning: The resource R.drawable.repeat_24px appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/drawable/shuffle_24px.xml:1: Warning: The resource R.drawable.shuffle_24px appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/drawable/skip_next_24px.xml:1: Warning: The resource R.drawable.skip_next_24px appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/drawable/skip_previous_24px.xml:1: Warning: The resource R.drawable.skip_previous_24px appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/drawable/thumb_down_24px.xml:1: Warning: The resource R.drawable.thumb_down_24px appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/drawable/thumb_up_24px.xml:1: Warning: The resource R.drawable.thumb_up_24px appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp: Warning: The ic_launcher.webp icon has identical contents in the following configuration folders: drawable, mipmap-xxxhdpi [IconDuplicatesConfig]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp: Warning: The ic_launcher_round.webp icon has identical contents in the following configuration folders: drawable, mipmap-xxxhdpi [IconDuplicatesConfig]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/mipmap-hdpi/ic_music_placeholder.png: Warning: The ic_music_placeholder.png icon has identical contents in the following configuration folders: drawable, mipmap-hdpi [IconDuplicatesConfig]
+
+   Explanation for issues of type "IconDuplicatesConfig":
+   If an icon is provided under different configuration parameters such as
+   drawable-hdpi or -v11, they should typically be different. This detector
+   catches cases where the same icon is provided in different configuration
+   folder which is usually not intentional.
+
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/drawable/default_image.png: Warning: Found bitmap drawable res/drawable/default_image.png in densityless folder [IconLocation]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/drawable/ic_launcher.webp: Warning: Found bitmap drawable res/drawable/ic_launcher.webp in densityless folder [IconLocation]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/drawable/ic_launcher_round.webp: Warning: Found bitmap drawable res/drawable/ic_launcher_round.webp in densityless folder [IconLocation]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/drawable/ic_music_placeholder.png: Warning: Found bitmap drawable res/drawable/ic_music_placeholder.png in densityless folder [IconLocation]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/src/main/res/drawable/person.png: Warning: Found bitmap drawable res/drawable/person.png in densityless folder [IconLocation]
+
+   Explanation for issues of type "IconLocation":
+   The res/drawable folder is intended for density-independent graphics such
+   as shapes defined in XML. For bitmaps, move it to drawable-mdpi and
+   consider providing higher and lower resolution versions in drawable-ldpi,
+   drawable-hdpi and drawable-xhdpi. If the icon really is density independent
+   (for example a solid color) you can place it in drawable-nodpi.
+
+   https://developer.android.com/guide/practices/screens_support.html
+
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:10: Warning: Use version catalog instead [UseTomlInstead]
+        classpath("com.google.gms:google-services:4.3.15") // versão atual
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:51: Warning: Use version catalog instead [UseTomlInstead]
+    implementation(platform("androidx.compose:compose-bom:2024.03.00"))
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:52: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("androidx.compose.ui:ui")
+                    ~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:53: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("androidx.compose.ui:ui-tooling-preview:1.6.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:54: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("androidx.compose.material3:material3")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:55: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("androidx.activity:activity-compose:1.8.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:58: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("androidx.navigation:navigation-compose:2.7.7")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:61: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:62: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:65: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("com.google.code.gson:gson:2.10.1")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:68: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("com.squareup.okhttp3:okhttp:4.11.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:71: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("com.google.android.gms:play-services-auth:20.7.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:74: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("io.coil-kt:coil-compose:2.5.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:77: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("com.google.accompanist:accompanist-permissions:0.33.0-alpha")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:78: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("io.coil-kt:coil-compose:2.4.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:82: Warning: Use the existing version catalog reference (libs.junit) instead [UseTomlInstead]
+    testImplementation("junit:junit:4.13.2")
+                        ~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:83: Warning: Use version catalog instead (androidx.test.ext:junit is already available as androidx-junit, but using version 1.2.1 instead) [UseTomlInstead]
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:84: Warning: Use version catalog instead (androidx.test.espresso:espresso-core is already available as androidx-espresso-core, but using version 3.6.1 instead) [UseTomlInstead]
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:85: Warning: Use version catalog instead [UseTomlInstead]
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.6.0")
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:87: Warning: Use version catalog instead (com.google.android.material:material is already available as material, but using version 1.12.0 instead) [UseTomlInstead]
+    implementation("com.google.android.material:material:1.11.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:89: Warning: Use version catalog instead [UseTomlInstead]
+    implementation(platform("com.google.firebase:firebase-bom:33.11.0"))
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:90: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("com.google.firebase:firebase-analytics")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:96: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("io.coil-kt:coil-compose:2.5.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:98: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("com.google.accompanist:accompanist-swiperefresh:0.30.1")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UseTomlInstead":
+   If your project is using a libs.versions.toml file, you should place all
+   Gradle dependencies in the TOML file. This lint check looks for version
+   declarations outside of the TOML file and suggests moving them (and in the
+   IDE, provides a quickfix to performing the operation automatically).
+
+0 errors, 68 warnings

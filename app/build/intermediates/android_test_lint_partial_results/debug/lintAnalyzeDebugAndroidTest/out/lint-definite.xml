@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.3.0" type="incidents">
+
+    <incident
+        id="AndroidGradlePluginVersion"
+        severity="warning"
+        message="A newer version of com.android.application than 8.9.0 is available: 8.9.1">
+        <fix-replace
+            description="Change to 8.9.1"
+            family="Update versions"
+            robot="true"
+            independent="true"
+            oldString="8.9.0"
+            replacement="8.9.1"/>
+        <location
+            file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
+            line="2"
+            column="7"
+            startOffset="17"
+            endLine="2"
+            endColumn="14"
+            endOffset="24"/>
+    </incident>
+
+</incidents>

@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.saulocastrodev.youtubemusicconnect.app-mergeDebugResources-66:/values-v25/values-v25.xml",
+            "map": [
+                {
+                    "source": "/home/saulo/.gradle/caches/transforms-3/d710bf1187e98546f9be643c48801cc6/transformed/appcompat-1.6.1/res/values-v25/values-v25.xml",
+                    "from": {
+                        "startLines": "2,3,4,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,126,209,308",
+                        "endLines": "2,3,5,7",
+                        "endColumns": "70,82,12,12",
+                        "endOffsets": "121,204,303,414"
+                    }
+                }
+            ]
+        }
+    ]
+}
