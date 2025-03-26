@@ -1,0 +1,71 @@
+# Compiled class files
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files
+*.jar
+*.war
+*.ear
+
+# Kotlin specific
+*.kotlin_module
+
+# IntelliJ IDEA / Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+build/
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+gradle-app.setting
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local configuration
+local.properties
+
+# JetBrains Rider
+.idea/
+
+# Android
+*.apk
+*.ap_
+captures/
+output.json
+
+# Unit test reports
+test-results/
+reports/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Ktor (caso esteja usando)
+tmp/
+
+# VS Code
+.vscode/
+
+# Mac system files
+*.DS_Store
+
+# Windows system files
+desktop.ini
+
+.env
