@@ -69,3 +69,6 @@ tmp/
 desktop.ini
 
 .env
+
+*local.properties
+*/local.properties
