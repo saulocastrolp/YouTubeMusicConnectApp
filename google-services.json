@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "593046252067",
+    "project_id": "musicconnect-c1848",
+    "storage_bucket": "musicconnect-c1848.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593046252067:android:3809483f798b93069b1f96",
+        "android_client_info": {
+          "package_name": "com.saulocastrodev.youtubemusicconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593046252067-uf30i8st3ekslct1vkng63j78g9eomd7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.saulocastrodev.youtubemusicconnect",
+            "certificate_hash": "dd5ddeb2961da9c995823030873cfb65a1fbb8e7"
+          }
+        },
+        {
+          "client_id": "593046252067-rvh9rsdu580pjubog2jtjomldapd1k9n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC-EEYcVU5NLQgDFscQ5N0RW8I7hfml7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "593046252067-rvh9rsdu580pjubog2jtjomldapd1k9n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
