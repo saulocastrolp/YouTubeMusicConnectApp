@@ -1,4 +1,4 @@
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:21: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:30: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
         targetSdk = 34
         ~~~~~~~~~~~~~~
 
@@ -37,40 +37,40 @@ agp = "8.9.0"
    with an older version. However, you may simply not be aware that a more
    recent version is available, and that is what this lint check helps find.
 
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:10: Warning: A newer version of com.google.gms:google-services than 4.3.15 is available: 4.4.2 [GradleDependency]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:19: Warning: A newer version of com.google.gms:google-services than 4.3.15 is available: 4.4.2 [GradleDependency]
         classpath("com.google.gms:google-services:4.3.15") // versão atual
                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:51: Warning: A newer version of androidx.compose:compose-bom than 2024.03.00 is available: 2025.03.00 [GradleDependency]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:63: Warning: A newer version of androidx.compose:compose-bom than 2024.03.00 is available: 2025.03.01 [GradleDependency]
     implementation(platform("androidx.compose:compose-bom:2024.03.00"))
                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:53: Warning: A newer version of androidx.compose.ui:ui-tooling-preview than 1.6.0 is available: 1.7.8 [GradleDependency]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:65: Warning: A newer version of androidx.compose.ui:ui-tooling-preview than 1.6.0 is available: 1.7.8 [GradleDependency]
     implementation("androidx.compose.ui:ui-tooling-preview:1.6.0")
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:55: Warning: A newer version of androidx.activity:activity-compose than 1.8.0 is available: 1.10.1 [GradleDependency]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:67: Warning: A newer version of androidx.activity:activity-compose than 1.8.0 is available: 1.10.1 [GradleDependency]
     implementation("androidx.activity:activity-compose:1.8.0")
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:58: Warning: A newer version of androidx.navigation:navigation-compose than 2.7.7 is available: 2.8.9 [GradleDependency]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:70: Warning: A newer version of androidx.navigation:navigation-compose than 2.7.7 is available: 2.8.9 [GradleDependency]
     implementation("androidx.navigation:navigation-compose:2.7.7")
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:68: Warning: A newer version of com.squareup.okhttp3:okhttp than 4.11.0 is available: 4.12.0 [GradleDependency]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:80: Warning: A newer version of com.squareup.okhttp3:okhttp than 4.11.0 is available: 4.12.0 [GradleDependency]
     implementation("com.squareup.okhttp3:okhttp:4.11.0")
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:71: Warning: A newer version of com.google.android.gms:play-services-auth than 20.7.0 is available: 21.3.0 [GradleDependency]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:83: Warning: A newer version of com.google.android.gms:play-services-auth than 20.7.0 is available: 21.3.0 [GradleDependency]
     implementation("com.google.android.gms:play-services-auth:20.7.0")
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:78: Warning: A newer version of io.coil-kt:coil-compose than 2.4.0 is available: 2.5.0 [GradleDependency]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:90: Warning: A newer version of io.coil-kt:coil-compose than 2.4.0 is available: 2.5.0 [GradleDependency]
     implementation("io.coil-kt:coil-compose:2.4.0")
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:83: Warning: A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1 [GradleDependency]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:95: Warning: A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1 [GradleDependency]
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:84: Warning: A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1 [GradleDependency]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:96: Warning: A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1 [GradleDependency]
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:85: Warning: A newer version of androidx.compose.ui:ui-test-junit4 than 1.6.0 is available: 1.7.8 [GradleDependency]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:97: Warning: A newer version of androidx.compose.ui:ui-test-junit4 than 1.6.0 is available: 1.7.8 [GradleDependency]
     androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.6.0")
                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:87: Warning: A newer version of com.google.android.material:material than 1.11.0 is available: 1.12.0 [GradleDependency]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:99: Warning: A newer version of com.google.android.material:material than 1.11.0 is available: 1.12.0 [GradleDependency]
     implementation("com.google.android.material:material:1.11.0")
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -171,76 +171,76 @@ agp = "8.9.0"
 
    https://developer.android.com/guide/practices/screens_support.html
 
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:10: Warning: Use version catalog instead [UseTomlInstead]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:19: Warning: Use version catalog instead [UseTomlInstead]
         classpath("com.google.gms:google-services:4.3.15") // versão atual
                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:51: Warning: Use version catalog instead [UseTomlInstead]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:63: Warning: Use version catalog instead [UseTomlInstead]
     implementation(platform("androidx.compose:compose-bom:2024.03.00"))
                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:52: Warning: Use version catalog instead [UseTomlInstead]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:64: Warning: Use version catalog instead [UseTomlInstead]
     implementation("androidx.compose.ui:ui")
                     ~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:53: Warning: Use version catalog instead [UseTomlInstead]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:65: Warning: Use version catalog instead [UseTomlInstead]
     implementation("androidx.compose.ui:ui-tooling-preview:1.6.0")
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:54: Warning: Use version catalog instead [UseTomlInstead]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:66: Warning: Use version catalog instead [UseTomlInstead]
     implementation("androidx.compose.material3:material3")
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:55: Warning: Use version catalog instead [UseTomlInstead]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:67: Warning: Use version catalog instead [UseTomlInstead]
     implementation("androidx.activity:activity-compose:1.8.0")
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:58: Warning: Use version catalog instead [UseTomlInstead]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:70: Warning: Use version catalog instead [UseTomlInstead]
     implementation("androidx.navigation:navigation-compose:2.7.7")
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:61: Warning: Use version catalog instead [UseTomlInstead]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:73: Warning: Use version catalog instead [UseTomlInstead]
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:62: Warning: Use version catalog instead [UseTomlInstead]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:74: Warning: Use version catalog instead [UseTomlInstead]
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:65: Warning: Use version catalog instead [UseTomlInstead]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:77: Warning: Use version catalog instead [UseTomlInstead]
     implementation("com.google.code.gson:gson:2.10.1")
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:68: Warning: Use version catalog instead [UseTomlInstead]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:80: Warning: Use version catalog instead [UseTomlInstead]
     implementation("com.squareup.okhttp3:okhttp:4.11.0")
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:71: Warning: Use version catalog instead [UseTomlInstead]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:83: Warning: Use version catalog instead [UseTomlInstead]
     implementation("com.google.android.gms:play-services-auth:20.7.0")
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:74: Warning: Use version catalog instead [UseTomlInstead]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:86: Warning: Use version catalog instead [UseTomlInstead]
     implementation("io.coil-kt:coil-compose:2.5.0")
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:77: Warning: Use version catalog instead [UseTomlInstead]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:89: Warning: Use version catalog instead [UseTomlInstead]
     implementation("com.google.accompanist:accompanist-permissions:0.33.0-alpha")
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:78: Warning: Use version catalog instead [UseTomlInstead]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:90: Warning: Use version catalog instead [UseTomlInstead]
     implementation("io.coil-kt:coil-compose:2.4.0")
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:82: Warning: Use the existing version catalog reference (libs.junit) instead [UseTomlInstead]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:94: Warning: Use the existing version catalog reference (libs.junit) instead [UseTomlInstead]
     testImplementation("junit:junit:4.13.2")
                         ~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:83: Warning: Use version catalog instead (androidx.test.ext:junit is already available as androidx-junit, but using version 1.2.1 instead) [UseTomlInstead]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:95: Warning: Use version catalog instead (androidx.test.ext:junit is already available as androidx-junit, but using version 1.2.1 instead) [UseTomlInstead]
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:84: Warning: Use version catalog instead (androidx.test.espresso:espresso-core is already available as androidx-espresso-core, but using version 3.6.1 instead) [UseTomlInstead]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:96: Warning: Use version catalog instead (androidx.test.espresso:espresso-core is already available as androidx-espresso-core, but using version 3.6.1 instead) [UseTomlInstead]
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:85: Warning: Use version catalog instead [UseTomlInstead]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:97: Warning: Use version catalog instead [UseTomlInstead]
     androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.6.0")
                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:87: Warning: Use version catalog instead (com.google.android.material:material is already available as material, but using version 1.12.0 instead) [UseTomlInstead]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:99: Warning: Use version catalog instead (com.google.android.material:material is already available as material, but using version 1.12.0 instead) [UseTomlInstead]
     implementation("com.google.android.material:material:1.11.0")
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:89: Warning: Use version catalog instead [UseTomlInstead]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:101: Warning: Use version catalog instead [UseTomlInstead]
     implementation(platform("com.google.firebase:firebase-bom:33.11.0"))
                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:90: Warning: Use version catalog instead [UseTomlInstead]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:102: Warning: Use version catalog instead [UseTomlInstead]
     implementation("com.google.firebase:firebase-analytics")
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:96: Warning: Use version catalog instead [UseTomlInstead]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:108: Warning: Use version catalog instead [UseTomlInstead]
     implementation("io.coil-kt:coil-compose:2.5.0")
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:98: Warning: Use version catalog instead [UseTomlInstead]
+/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts:110: Warning: Use version catalog instead [UseTomlInstead]
     implementation("com.google.accompanist:accompanist-swiperefresh:0.30.1")
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

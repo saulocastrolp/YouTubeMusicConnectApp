@@ -15,7 +15,7 @@
         errorLine2="        ~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="21"
+            line="30"
             column="9"/>
     </issue>
 
@@ -79,14 +79,14 @@
         errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="10"
+            line="19"
             column="20"/>
     </issue>
 
     <issue
         id="GradleDependency"
         severity="Warning"
-        message="A newer version of androidx.compose:compose-bom than 2024.03.00 is available: 2025.03.00"
+        message="A newer version of androidx.compose:compose-bom than 2024.03.00 is available: 2025.03.01"
         category="Correctness"
         priority="4"
         summary="Obsolete Gradle Dependency"
@@ -95,7 +95,7 @@
         errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="51"
+            line="63"
             column="20"/>
     </issue>
 
@@ -111,7 +111,7 @@
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="53"
+            line="65"
             column="21"/>
     </issue>
 
@@ -127,7 +127,7 @@
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="55"
+            line="67"
             column="21"/>
     </issue>
 
@@ -143,7 +143,7 @@
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="58"
+            line="70"
             column="21"/>
     </issue>
 
@@ -159,7 +159,7 @@
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="68"
+            line="80"
             column="21"/>
     </issue>
 
@@ -175,7 +175,7 @@
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="71"
+            line="83"
             column="21"/>
     </issue>
 
@@ -191,7 +191,7 @@
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="78"
+            line="90"
             column="21"/>
     </issue>
 
@@ -207,7 +207,7 @@
         errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="83"
+            line="95"
             column="32"/>
     </issue>
 
@@ -223,7 +223,7 @@
         errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="84"
+            line="96"
             column="32"/>
     </issue>
 
@@ -239,7 +239,7 @@
         errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="85"
+            line="97"
             column="32"/>
     </issue>
 
@@ -255,7 +255,7 @@
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="87"
+            line="99"
             column="21"/>
     </issue>
 
@@ -665,7 +665,7 @@
         errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="10"
+            line="19"
             column="20"/>
     </issue>
 
@@ -681,7 +681,7 @@
         errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="51"
+            line="63"
             column="20"/>
     </issue>
 
@@ -697,7 +697,7 @@
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="52"
+            line="64"
             column="21"/>
     </issue>
 
@@ -713,7 +713,7 @@
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="53"
+            line="65"
             column="21"/>
     </issue>
 
@@ -729,7 +729,7 @@
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="54"
+            line="66"
             column="21"/>
     </issue>
 
@@ -745,7 +745,7 @@
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="55"
+            line="67"
             column="21"/>
     </issue>
 
@@ -761,7 +761,7 @@
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="58"
+            line="70"
             column="21"/>
     </issue>
 
@@ -777,7 +777,7 @@
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="61"
+            line="73"
             column="21"/>
     </issue>
 
@@ -793,7 +793,7 @@
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="62"
+            line="74"
             column="21"/>
     </issue>
 
@@ -809,7 +809,7 @@
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="65"
+            line="77"
             column="21"/>
     </issue>
 
@@ -825,7 +825,7 @@
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="68"
+            line="80"
             column="21"/>
     </issue>
 
@@ -841,7 +841,7 @@
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="71"
+            line="83"
             column="21"/>
     </issue>
 
@@ -857,7 +857,7 @@
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="74"
+            line="86"
             column="21"/>
     </issue>
 
@@ -873,7 +873,7 @@
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="77"
+            line="89"
             column="21"/>
     </issue>
 
@@ -889,7 +889,7 @@
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="78"
+            line="90"
             column="21"/>
     </issue>
 
@@ -905,7 +905,7 @@
         errorLine2="                        ~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="82"
+            line="94"
             column="25"/>
     </issue>
 
@@ -921,7 +921,7 @@
         errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="83"
+            line="95"
             column="32"/>
     </issue>
 
@@ -937,7 +937,7 @@
         errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="84"
+            line="96"
             column="32"/>
     </issue>
 
@@ -953,7 +953,7 @@
         errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="85"
+            line="97"
             column="32"/>
     </issue>
 
@@ -969,7 +969,7 @@
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="87"
+            line="99"
             column="21"/>
     </issue>
 
@@ -985,7 +985,7 @@
         errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="89"
+            line="101"
             column="20"/>
     </issue>
 
@@ -1001,7 +1001,7 @@
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="90"
+            line="102"
             column="21"/>
     </issue>
 
@@ -1017,7 +1017,7 @@
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="96"
+            line="108"
             column="21"/>
     </issue>
 
@@ -1033,7 +1033,7 @@
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/home/saulo/AndroidStudioProjects/YouTubeMusicConnect/app/build.gradle.kts"
-            line="98"
+            line="110"
             column="21"/>
     </issue>
 

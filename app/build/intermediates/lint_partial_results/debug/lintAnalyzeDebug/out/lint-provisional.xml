@@ -539,17 +539,17 @@
             replacement="">
             <range
                 file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/saulocastrodev/youtubemusicconnect/MainActivity.kt"
-                startOffset="10614"
-                endOffset="10649"/>
+                startOffset="10817"
+                endOffset="10852"/>
         </fix-replace>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/saulocastrodev/youtubemusicconnect/MainActivity.kt"
-            line="300"
+            line="306"
             column="5"
-            startOffset="10614"
-            endLine="300"
+            startOffset="10817"
+            endLine="306"
             endColumn="40"
-            endOffset="10649"/>
+            endOffset="10852"/>
         <map>
             <condition minGE="fffffffff0000000"/>
         </map>
@@ -564,17 +564,17 @@
             replacement="">
             <range
                 file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/saulocastrodev/youtubemusicconnect/MainActivity.kt"
-                startOffset="15608"
-                endOffset="15643"/>
+                startOffset="15873"
+                endOffset="15908"/>
         </fix-replace>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/saulocastrodev/youtubemusicconnect/MainActivity.kt"
-            line="443"
+            line="449"
             column="5"
-            startOffset="15608"
-            endLine="443"
+            startOffset="15873"
+            endLine="449"
             endColumn="40"
-            endOffset="15643"/>
+            endOffset="15908"/>
         <map>
             <condition minGE="fffffffff0000000"/>
         </map>
@@ -589,17 +589,17 @@
             replacement="">
             <range
                 file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/saulocastrodev/youtubemusicconnect/MainActivity.kt"
-                startOffset="29589"
-                endOffset="29624"/>
+                startOffset="29795"
+                endOffset="29830"/>
         </fix-replace>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/saulocastrodev/youtubemusicconnect/MainActivity.kt"
-            line="769"
+            line="775"
             column="5"
-            startOffset="29589"
-            endLine="769"
+            startOffset="29795"
+            endLine="775"
             endColumn="40"
-            endOffset="29624"/>
+            endOffset="29830"/>
         <map>
             <condition minGE="fffffffff0000000"/>
         </map>

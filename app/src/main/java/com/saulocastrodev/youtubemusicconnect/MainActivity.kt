@@ -1,5 +1,7 @@
 package com.saulocastrodev.youtubemusicconnect
 
+import com.saulocastrodev.youtubemusicconnect.BuildConfig
+
 import android.Manifest
 import android.content.Context
 import android.content.pm.PackageManager
@@ -280,6 +282,9 @@ class MainActivity : ComponentActivity() {
         .build()
         .create(ApiService::class.java)
 
+    val youtubeKey = BuildConfig.YOUTUBE_API_KEY
+    val googleClientKey = BuildConfig.GOOGLE_CLIENT_KEY
+
     private var companionIP: String? = null
     private var webSocket: WebSocket? = null
     private var metadata by mutableStateOf(MediaState(Player(null,null,null,null,null,null), Video(null, null,null,null,null,null,null,null,null,null,null,null), null))
@@ -548,7 +553,7 @@ class MainActivity : ComponentActivity() {
         val googleSignInClient = remember {
             val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
-                .requestIdToken("593046252067-rvh9rsdu580pjubog2jtjomldapd1k9n.apps.googleusercontent.com") // substitua aqui
+                .requestIdToken(googleClientKey) // substitua aqui
                 .build()
 
             GoogleSignIn.getClient(context, gso)

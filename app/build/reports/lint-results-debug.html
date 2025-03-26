@@ -179,7 +179,7 @@ document.getElementById(id).style.display = 'none';
     <div class="mdl-layout__header-row">
       <span class="mdl-layout-title">Lint Report: 68 warnings</span>
       <div class="mdl-layout-spacer"></div>
-      <nav class="mdl-navigation mdl-layout--large-screen-only">Check performed at Wed Mar 26 13:28:28 BRT 2025 by AGP (8.3.0)</nav>
+      <nav class="mdl-navigation mdl-layout--large-screen-only">Check performed at Wed Mar 26 15:00:28 BRT 2025 by AGP (8.3.0)</nav>
     </div>
   </header>
   <div class="mdl-layout__drawer">
@@ -261,13 +261,13 @@ Dismiss</button>            </div>
               <div class="mdl-card__supporting-text">
 <div class="issue">
 <div class="warningslist">
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:21</span>: <span class="message">Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the <code>android.os.Build.VERSION_CODES</code> javadoc for details.</span><br /><pre class="errorlines">
-<span class="lineno">  18 </span>    defaultConfig {
-<span class="lineno">  19 </span>        applicationId = "com.saulocastrodev.youtubemusicconnect"
-<span class="lineno">  20 </span>        minSdk = 24
-<span class="caretline"><span class="lineno">  21 </span>        <span class="warning">targetSdk = 34</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  22 </span>        versionCode = 1
-<span class="lineno">  23 </span>        versionName = "1.0"
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:30</span>: <span class="message">Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the <code>android.os.Build.VERSION_CODES</code> javadoc for details.</span><br /><pre class="errorlines">
+<span class="lineno">  27 </span>    defaultConfig {
+<span class="lineno">  28 </span>        applicationId = "com.saulocastrodev.youtubemusicconnect"
+<span class="lineno">  29 </span>        minSdk = 24
+<span class="caretline"><span class="lineno">  30 </span>        <span class="warning">targetSdk = 34</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  31 </span>        versionCode = 1
+<span class="lineno">  32 </span>        versionName = "1.0"
 </pre>
 
 </div>
@@ -371,122 +371,122 @@ Dismiss</button>            </div>
               <div class="mdl-card__supporting-text">
 <div class="issue">
 <div class="warningslist">
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:10</span>: <span class="message">A newer version of com.google.gms:google-services than 4.3.15 is available: 4.4.2</span><br /><pre class="errorlines">
-<span class="lineno">   7 </span>
-<span class="lineno">   8 </span>buildscript {
-<span class="lineno">   9 </span>    dependencies {
-<span class="caretline"><span class="lineno">  10 </span>        classpath("<span class="warning">com.google.gms:google-services:4.3.15</span>") // versão atual&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  11 </span>    }
-<span class="lineno">  12 </span>}
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:19</span>: <span class="message">A newer version of com.google.gms:google-services than 4.3.15 is available: 4.4.2</span><br /><pre class="errorlines">
+<span class="lineno">  16 </span>
+<span class="lineno">  17 </span>buildscript {
+<span class="lineno">  18 </span>    dependencies {
+<span class="caretline"><span class="lineno">  19 </span>        classpath("<span class="warning">com.google.gms:google-services:4.3.15</span>") // versão atual&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  20 </span>    }
+<span class="lineno">  21 </span>}
 </pre>
 
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:51</span>: <span class="message">A newer version of androidx.compose:compose-bom than 2024.03.00 is available: 2025.03.00</span><br /><pre class="errorlines">
-<span class="lineno">  48 </span>
-<span class="lineno">  49 </span>dependencies {
-<span class="lineno">  50 </span>    // Jetpack Compose atualizado
-<span class="caretline"><span class="lineno">  51 </span>    implementation(<span class="warning">platform("androidx.compose:compose-bom:2024.03.00")</span>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  52 </span>    implementation("androidx.compose.ui:ui")
-<span class="lineno">  53 </span>    implementation("androidx.compose.ui:ui-tooling-preview:1.6.0")
-<span class="lineno">  54 </span>    implementation("androidx.compose.material3:material3")
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:63</span>: <span class="message">A newer version of androidx.compose:compose-bom than 2024.03.00 is available: 2025.03.01</span><br /><pre class="errorlines">
+<span class="lineno">  60 </span>
+<span class="lineno">  61 </span>dependencies {
+<span class="lineno">  62 </span>    // Jetpack Compose atualizado
+<span class="caretline"><span class="lineno">  63 </span>    implementation(<span class="warning">platform("androidx.compose:compose-bom:2024.03.00")</span>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  64 </span>    implementation("androidx.compose.ui:ui")
+<span class="lineno">  65 </span>    implementation("androidx.compose.ui:ui-tooling-preview:1.6.0")
+<span class="lineno">  66 </span>    implementation("androidx.compose.material3:material3")
 </pre>
 
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:53</span>: <span class="message">A newer version of androidx.compose.ui:ui-tooling-preview than 1.6.0 is available: 1.7.8</span><br /><pre class="errorlines">
-<span class="lineno">  50 </span>    // Jetpack Compose atualizado
-<span class="lineno">  51 </span>    implementation(platform("androidx.compose:compose-bom:2024.03.00"))
-<span class="lineno">  52 </span>    implementation("androidx.compose.ui:ui")
-<span class="caretline"><span class="lineno">  53 </span>    implementation("<span class="warning">androidx.compose.ui:ui-tooling-preview:1.6.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  54 </span>    implementation("androidx.compose.material3:material3")
-<span class="lineno">  55 </span>    implementation("androidx.activity:activity-compose:1.8.0")
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:65</span>: <span class="message">A newer version of androidx.compose.ui:ui-tooling-preview than 1.6.0 is available: 1.7.8</span><br /><pre class="errorlines">
+<span class="lineno">  62 </span>    // Jetpack Compose atualizado
+<span class="lineno">  63 </span>    implementation(platform("androidx.compose:compose-bom:2024.03.00"))
+<span class="lineno">  64 </span>    implementation("androidx.compose.ui:ui")
+<span class="caretline"><span class="lineno">  65 </span>    implementation("<span class="warning">androidx.compose.ui:ui-tooling-preview:1.6.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  66 </span>    implementation("androidx.compose.material3:material3")
+<span class="lineno">  67 </span>    implementation("androidx.activity:activity-compose:1.8.0")
 </pre>
 
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:55</span>: <span class="message">A newer version of androidx.activity:activity-compose than 1.8.0 is available: 1.10.1</span><br /><pre class="errorlines">
-<span class="lineno">  52 </span>    implementation("androidx.compose.ui:ui")
-<span class="lineno">  53 </span>    implementation("androidx.compose.ui:ui-tooling-preview:1.6.0")
-<span class="lineno">  54 </span>    implementation("androidx.compose.material3:material3")
-<span class="caretline"><span class="lineno">  55 </span>    implementation("<span class="warning">androidx.activity:activity-compose:1.8.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  56 </span>
-<span class="lineno">  57 </span>    // Navegação no Compose
-<span class="lineno">  58 </span>    implementation("androidx.navigation:navigation-compose:2.7.7")
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:67</span>: <span class="message">A newer version of androidx.activity:activity-compose than 1.8.0 is available: 1.10.1</span><br /><pre class="errorlines">
+<span class="lineno">  64 </span>    implementation("androidx.compose.ui:ui")
+<span class="lineno">  65 </span>    implementation("androidx.compose.ui:ui-tooling-preview:1.6.0")
+<span class="lineno">  66 </span>    implementation("androidx.compose.material3:material3")
+<span class="caretline"><span class="lineno">  67 </span>    implementation("<span class="warning">androidx.activity:activity-compose:1.8.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  68 </span>
+<span class="lineno">  69 </span>    // Navegação no Compose
+<span class="lineno">  70 </span>    implementation("androidx.navigation:navigation-compose:2.7.7")
 </pre>
 
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:58</span>: <span class="message">A newer version of androidx.navigation:navigation-compose than 2.7.7 is available: 2.8.9</span><br /><pre class="errorlines">
-<span class="lineno">  55 </span>    implementation("androidx.activity:activity-compose:1.8.0")
-<span class="lineno">  56 </span>
-<span class="lineno">  57 </span>    // Navegação no Compose
-<span class="caretline"><span class="lineno">  58 </span>    implementation("<span class="warning">androidx.navigation:navigation-compose:2.7.7</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  59 </span>
-<span class="lineno">  60 </span>    // Retrofit para chamadas API
-<span class="lineno">  61 </span>    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:70</span>: <span class="message">A newer version of androidx.navigation:navigation-compose than 2.7.7 is available: 2.8.9</span><br /><pre class="errorlines">
+<span class="lineno">  67 </span>    implementation("androidx.activity:activity-compose:1.8.0")
+<span class="lineno">  68 </span>
+<span class="lineno">  69 </span>    // Navegação no Compose
+<span class="caretline"><span class="lineno">  70 </span>    implementation("<span class="warning">androidx.navigation:navigation-compose:2.7.7</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  71 </span>
+<span class="lineno">  72 </span>    // Retrofit para chamadas API
+<span class="lineno">  73 </span>    implementation("com.squareup.retrofit2:retrofit:2.9.0")
 </pre>
 
 <button class="mdl-button mdl-js-button mdl-button--primary" id="GradleDependencyDivLink" onclick="reveal('GradleDependencyDiv');" />+ 7 More Occurrences...</button>
 <div id="GradleDependencyDiv" style="display: none">
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:68</span>: <span class="message">A newer version of com.squareup.okhttp3:okhttp than 4.11.0 is available: 4.12.0</span><br /><pre class="errorlines">
-<span class="lineno">  65 </span>    implementation("com.google.code.gson:gson:2.10.1")
-<span class="lineno">  66 </span>
-<span class="lineno">  67 </span>    // OkHttp para WebSocket e HTTP
-<span class="caretline"><span class="lineno">  68 </span>    implementation("<span class="warning">com.squareup.okhttp3:okhttp:4.11.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  69 </span>
-<span class="lineno">  70 </span>    // Google Sign-In
-<span class="lineno">  71 </span>    implementation("com.google.android.gms:play-services-auth:20.7.0")
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:80</span>: <span class="message">A newer version of com.squareup.okhttp3:okhttp than 4.11.0 is available: 4.12.0</span><br /><pre class="errorlines">
+<span class="lineno">  77 </span>    implementation("com.google.code.gson:gson:2.10.1")
+<span class="lineno">  78 </span>
+<span class="lineno">  79 </span>    // OkHttp para WebSocket e HTTP
+<span class="caretline"><span class="lineno">  80 </span>    implementation("<span class="warning">com.squareup.okhttp3:okhttp:4.11.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  81 </span>
+<span class="lineno">  82 </span>    // Google Sign-In
+<span class="lineno">  83 </span>    implementation("com.google.android.gms:play-services-auth:20.7.0")
 </pre>
 
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:71</span>: <span class="message">A newer version of com.google.android.gms:play-services-auth than 20.7.0 is available: 21.3.0</span><br /><pre class="errorlines">
-<span class="lineno">  68 </span>    implementation("com.squareup.okhttp3:okhttp:4.11.0")
-<span class="lineno">  69 </span>
-<span class="lineno">  70 </span>    // Google Sign-In
-<span class="caretline"><span class="lineno">  71 </span>    implementation("<span class="warning">com.google.android.gms:play-services-auth:20.7.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  72 </span>
-<span class="lineno">  73 </span>    // Coil para carregamento de imagens
-<span class="lineno">  74 </span>    implementation("io.coil-kt:coil-compose:2.5.0")
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:83</span>: <span class="message">A newer version of com.google.android.gms:play-services-auth than 20.7.0 is available: 21.3.0</span><br /><pre class="errorlines">
+<span class="lineno">  80 </span>    implementation("com.squareup.okhttp3:okhttp:4.11.0")
+<span class="lineno">  81 </span>
+<span class="lineno">  82 </span>    // Google Sign-In
+<span class="caretline"><span class="lineno">  83 </span>    implementation("<span class="warning">com.google.android.gms:play-services-auth:20.7.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  84 </span>
+<span class="lineno">  85 </span>    // Coil para carregamento de imagens
+<span class="lineno">  86 </span>    implementation("io.coil-kt:coil-compose:2.5.0")
 </pre>
 
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:78</span>: <span class="message">A newer version of io.coil-kt:coil-compose than 2.4.0 is available: 2.5.0</span><br /><pre class="errorlines">
-<span class="lineno">  75 </span>
-<span class="lineno">  76 </span>    // Accompanist para permissões
-<span class="lineno">  77 </span>    implementation("com.google.accompanist:accompanist-permissions:0.33.0-alpha")
-<span class="caretline"><span class="lineno">  78 </span>    implementation("<span class="warning">io.coil-kt:coil-compose:2.4.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  79 </span>
-<span class="lineno">  80 </span>
-<span class="lineno">  81 </span>    // Testes
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:90</span>: <span class="message">A newer version of io.coil-kt:coil-compose than 2.4.0 is available: 2.5.0</span><br /><pre class="errorlines">
+<span class="lineno">  87 </span>
+<span class="lineno">  88 </span>    // Accompanist para permissões
+<span class="lineno">  89 </span>    implementation("com.google.accompanist:accompanist-permissions:0.33.0-alpha")
+<span class="caretline"><span class="lineno">  90 </span>    implementation("<span class="warning">io.coil-kt:coil-compose:2.4.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  91 </span>
+<span class="lineno">  92 </span>
+<span class="lineno">  93 </span>    // Testes
 </pre>
 
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:83</span>: <span class="message">A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1</span><br /><pre class="errorlines">
-<span class="lineno">  80 </span>
-<span class="lineno">  81 </span>    // Testes
-<span class="lineno">  82 </span>    testImplementation("junit:junit:4.13.2")
-<span class="caretline"><span class="lineno">  83 </span>    androidTestImplementation("<span class="warning">androidx.test.ext:junit:1.1.5</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  84 </span>    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-<span class="lineno">  85 </span>    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.6.0")
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:95</span>: <span class="message">A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1</span><br /><pre class="errorlines">
+<span class="lineno">  92 </span>
+<span class="lineno">  93 </span>    // Testes
+<span class="lineno">  94 </span>    testImplementation("junit:junit:4.13.2")
+<span class="caretline"><span class="lineno">  95 </span>    androidTestImplementation("<span class="warning">androidx.test.ext:junit:1.1.5</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  96 </span>    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+<span class="lineno">  97 </span>    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.6.0")
 </pre>
 
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:84</span>: <span class="message">A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1</span><br /><pre class="errorlines">
-<span class="lineno">  81 </span>    // Testes
-<span class="lineno">  82 </span>    testImplementation("junit:junit:4.13.2")
-<span class="lineno">  83 </span>    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-<span class="caretline"><span class="lineno">  84 </span>    androidTestImplementation("<span class="warning">androidx.test.espresso:espresso-core:3.5.1</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  85 </span>    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.6.0")
-<span class="lineno">  86 </span>
-<span class="lineno">  87 </span>    implementation("com.google.android.material:material:1.11.0")
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:96</span>: <span class="message">A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1</span><br /><pre class="errorlines">
+<span class="lineno">  93 </span>    // Testes
+<span class="lineno">  94 </span>    testImplementation("junit:junit:4.13.2")
+<span class="lineno">  95 </span>    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+<span class="caretline"><span class="lineno">  96 </span>    androidTestImplementation("<span class="warning">androidx.test.espresso:espresso-core:3.5.1</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  97 </span>    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.6.0")
+<span class="lineno">  98 </span>
+<span class="lineno">  99 </span>    implementation("com.google.android.material:material:1.11.0")
 </pre>
 
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:85</span>: <span class="message">A newer version of androidx.compose.ui:ui-test-junit4 than 1.6.0 is available: 1.7.8</span><br /><pre class="errorlines">
-<span class="lineno">  82 </span>    testImplementation("junit:junit:4.13.2")
-<span class="lineno">  83 </span>    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-<span class="lineno">  84 </span>    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-<span class="caretline"><span class="lineno">  85 </span>    androidTestImplementation("<span class="warning">androidx.compose.ui:ui-test-junit4:1.6.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  86 </span>
-<span class="lineno">  87 </span>    implementation("com.google.android.material:material:1.11.0")
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:97</span>: <span class="message">A newer version of androidx.compose.ui:ui-test-junit4 than 1.6.0 is available: 1.7.8</span><br /><pre class="errorlines">
+<span class="lineno">  94 </span>    testImplementation("junit:junit:4.13.2")
+<span class="lineno">  95 </span>    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+<span class="lineno">  96 </span>    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+<span class="caretline"><span class="lineno">  97 </span>    androidTestImplementation("<span class="warning">androidx.compose.ui:ui-test-junit4:1.6.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  98 </span>
+<span class="lineno">  99 </span>    implementation("com.google.android.material:material:1.11.0")
 </pre>
 
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:87</span>: <span class="message">A newer version of com.google.android.material:material than 1.11.0 is available: 1.12.0</span><br /><pre class="errorlines">
-<span class="lineno">  84 </span>    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-<span class="lineno">  85 </span>    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.6.0")
-<span class="lineno">  86 </span>
-<span class="caretline"><span class="lineno">  87 </span>    implementation("<span class="warning">com.google.android.material:material:1.11.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  88 </span>
-<span class="lineno">  89 </span>    implementation(platform("com.google.firebase:firebase-bom:33.11.0"))
-<span class="lineno">  90 </span>    implementation("com.google.firebase:firebase-analytics")
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:99</span>: <span class="message">A newer version of com.google.android.material:material than 1.11.0 is available: 1.12.0</span><br /><pre class="errorlines">
+<span class="lineno">  96 </span>    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+<span class="lineno">  97 </span>    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.6.0")
+<span class="lineno">  98 </span>
+<span class="caretline"><span class="lineno">  99 </span>    implementation("<span class="warning">com.google.android.material:material:1.11.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 100 </span>
+<span class="lineno"> 101 </span>    implementation(platform("com.google.firebase:firebase-bom:33.11.0"))
+<span class="lineno"> 102 </span>    implementation("com.google.firebase:firebase-analytics")
 </pre>
 
 </div>
@@ -806,239 +806,239 @@ Dismiss</button>            </div>
               <div class="mdl-card__supporting-text">
 <div class="issue">
 <div class="warningslist">
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:10</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
-<span class="lineno">   7 </span>
-<span class="lineno">   8 </span>buildscript {
-<span class="lineno">   9 </span>    dependencies {
-<span class="caretline"><span class="lineno">  10 </span>        classpath("<span class="warning">com.google.gms:google-services:4.3.15</span>") // versão atual&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  11 </span>    }
-<span class="lineno">  12 </span>}
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:19</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
+<span class="lineno">  16 </span>
+<span class="lineno">  17 </span>buildscript {
+<span class="lineno">  18 </span>    dependencies {
+<span class="caretline"><span class="lineno">  19 </span>        classpath("<span class="warning">com.google.gms:google-services:4.3.15</span>") // versão atual&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  20 </span>    }
+<span class="lineno">  21 </span>}
 </pre>
 
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:51</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
-<span class="lineno">  48 </span>
-<span class="lineno">  49 </span>dependencies {
-<span class="lineno">  50 </span>    // Jetpack Compose atualizado
-<span class="caretline"><span class="lineno">  51 </span>    implementation(<span class="warning">platform("androidx.compose:compose-bom:2024.03.00")</span>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  52 </span>    implementation("androidx.compose.ui:ui")
-<span class="lineno">  53 </span>    implementation("androidx.compose.ui:ui-tooling-preview:1.6.0")
-<span class="lineno">  54 </span>    implementation("androidx.compose.material3:material3")
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:63</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
+<span class="lineno">  60 </span>
+<span class="lineno">  61 </span>dependencies {
+<span class="lineno">  62 </span>    // Jetpack Compose atualizado
+<span class="caretline"><span class="lineno">  63 </span>    implementation(<span class="warning">platform("androidx.compose:compose-bom:2024.03.00")</span>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  64 </span>    implementation("androidx.compose.ui:ui")
+<span class="lineno">  65 </span>    implementation("androidx.compose.ui:ui-tooling-preview:1.6.0")
+<span class="lineno">  66 </span>    implementation("androidx.compose.material3:material3")
 </pre>
 
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:52</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
-<span class="lineno">  49 </span>dependencies {
-<span class="lineno">  50 </span>    // Jetpack Compose atualizado
-<span class="lineno">  51 </span>    implementation(platform("androidx.compose:compose-bom:2024.03.00"))
-<span class="caretline"><span class="lineno">  52 </span>    implementation("<span class="warning">androidx.compose.ui:ui</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  53 </span>    implementation("androidx.compose.ui:ui-tooling-preview:1.6.0")
-<span class="lineno">  54 </span>    implementation("androidx.compose.material3:material3")
-<span class="lineno">  55 </span>    implementation("androidx.activity:activity-compose:1.8.0")
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:64</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
+<span class="lineno">  61 </span>dependencies {
+<span class="lineno">  62 </span>    // Jetpack Compose atualizado
+<span class="lineno">  63 </span>    implementation(platform("androidx.compose:compose-bom:2024.03.00"))
+<span class="caretline"><span class="lineno">  64 </span>    implementation("<span class="warning">androidx.compose.ui:ui</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  65 </span>    implementation("androidx.compose.ui:ui-tooling-preview:1.6.0")
+<span class="lineno">  66 </span>    implementation("androidx.compose.material3:material3")
+<span class="lineno">  67 </span>    implementation("androidx.activity:activity-compose:1.8.0")
 </pre>
 
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:53</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
-<span class="lineno">  50 </span>    // Jetpack Compose atualizado
-<span class="lineno">  51 </span>    implementation(platform("androidx.compose:compose-bom:2024.03.00"))
-<span class="lineno">  52 </span>    implementation("androidx.compose.ui:ui")
-<span class="caretline"><span class="lineno">  53 </span>    implementation("<span class="warning">androidx.compose.ui:ui-tooling-preview:1.6.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  54 </span>    implementation("androidx.compose.material3:material3")
-<span class="lineno">  55 </span>    implementation("androidx.activity:activity-compose:1.8.0")
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:65</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
+<span class="lineno">  62 </span>    // Jetpack Compose atualizado
+<span class="lineno">  63 </span>    implementation(platform("androidx.compose:compose-bom:2024.03.00"))
+<span class="lineno">  64 </span>    implementation("androidx.compose.ui:ui")
+<span class="caretline"><span class="lineno">  65 </span>    implementation("<span class="warning">androidx.compose.ui:ui-tooling-preview:1.6.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  66 </span>    implementation("androidx.compose.material3:material3")
+<span class="lineno">  67 </span>    implementation("androidx.activity:activity-compose:1.8.0")
 </pre>
 
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:54</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
-<span class="lineno">  51 </span>    implementation(platform("androidx.compose:compose-bom:2024.03.00"))
-<span class="lineno">  52 </span>    implementation("androidx.compose.ui:ui")
-<span class="lineno">  53 </span>    implementation("androidx.compose.ui:ui-tooling-preview:1.6.0")
-<span class="caretline"><span class="lineno">  54 </span>    implementation("<span class="warning">androidx.compose.material3:material3</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  55 </span>    implementation("androidx.activity:activity-compose:1.8.0")
-<span class="lineno">  56 </span>
-<span class="lineno">  57 </span>    // Navegação no Compose
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:66</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
+<span class="lineno">  63 </span>    implementation(platform("androidx.compose:compose-bom:2024.03.00"))
+<span class="lineno">  64 </span>    implementation("androidx.compose.ui:ui")
+<span class="lineno">  65 </span>    implementation("androidx.compose.ui:ui-tooling-preview:1.6.0")
+<span class="caretline"><span class="lineno">  66 </span>    implementation("<span class="warning">androidx.compose.material3:material3</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  67 </span>    implementation("androidx.activity:activity-compose:1.8.0")
+<span class="lineno">  68 </span>
+<span class="lineno">  69 </span>    // Navegação no Compose
 </pre>
 
 <button class="mdl-button mdl-js-button mdl-button--primary" id="UseTomlInsteadDivLink" onclick="reveal('UseTomlInsteadDiv');" />+ 19 More Occurrences...</button>
 <div id="UseTomlInsteadDiv" style="display: none">
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:55</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
-<span class="lineno">  52 </span>    implementation("androidx.compose.ui:ui")
-<span class="lineno">  53 </span>    implementation("androidx.compose.ui:ui-tooling-preview:1.6.0")
-<span class="lineno">  54 </span>    implementation("androidx.compose.material3:material3")
-<span class="caretline"><span class="lineno">  55 </span>    implementation("<span class="warning">androidx.activity:activity-compose:1.8.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  56 </span>
-<span class="lineno">  57 </span>    // Navegação no Compose
-<span class="lineno">  58 </span>    implementation("androidx.navigation:navigation-compose:2.7.7")
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:67</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
+<span class="lineno">  64 </span>    implementation("androidx.compose.ui:ui")
+<span class="lineno">  65 </span>    implementation("androidx.compose.ui:ui-tooling-preview:1.6.0")
+<span class="lineno">  66 </span>    implementation("androidx.compose.material3:material3")
+<span class="caretline"><span class="lineno">  67 </span>    implementation("<span class="warning">androidx.activity:activity-compose:1.8.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  68 </span>
+<span class="lineno">  69 </span>    // Navegação no Compose
+<span class="lineno">  70 </span>    implementation("androidx.navigation:navigation-compose:2.7.7")
 </pre>
 
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:58</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
-<span class="lineno">  55 </span>    implementation("androidx.activity:activity-compose:1.8.0")
-<span class="lineno">  56 </span>
-<span class="lineno">  57 </span>    // Navegação no Compose
-<span class="caretline"><span class="lineno">  58 </span>    implementation("<span class="warning">androidx.navigation:navigation-compose:2.7.7</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  59 </span>
-<span class="lineno">  60 </span>    // Retrofit para chamadas API
-<span class="lineno">  61 </span>    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:70</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
+<span class="lineno">  67 </span>    implementation("androidx.activity:activity-compose:1.8.0")
+<span class="lineno">  68 </span>
+<span class="lineno">  69 </span>    // Navegação no Compose
+<span class="caretline"><span class="lineno">  70 </span>    implementation("<span class="warning">androidx.navigation:navigation-compose:2.7.7</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  71 </span>
+<span class="lineno">  72 </span>    // Retrofit para chamadas API
+<span class="lineno">  73 </span>    implementation("com.squareup.retrofit2:retrofit:2.9.0")
 </pre>
 
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:61</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
-<span class="lineno">  58 </span>    implementation("androidx.navigation:navigation-compose:2.7.7")
-<span class="lineno">  59 </span>
-<span class="lineno">  60 </span>    // Retrofit para chamadas API
-<span class="caretline"><span class="lineno">  61 </span>    implementation("<span class="warning">com.squareup.retrofit2:retrofit:2.9.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  62 </span>    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-<span class="lineno">  63 </span>
-<span class="lineno">  64 </span>    // Gson para JSON
-</pre>
-
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:62</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
-<span class="lineno">  59 </span>
-<span class="lineno">  60 </span>    // Retrofit para chamadas API
-<span class="lineno">  61 </span>    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-<span class="caretline"><span class="lineno">  62 </span>    implementation("<span class="warning">com.squareup.retrofit2:converter-gson:2.9.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  63 </span>
-<span class="lineno">  64 </span>    // Gson para JSON
-<span class="lineno">  65 </span>    implementation("com.google.code.gson:gson:2.10.1")
-</pre>
-
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:65</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
-<span class="lineno">  62 </span>    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-<span class="lineno">  63 </span>
-<span class="lineno">  64 </span>    // Gson para JSON
-<span class="caretline"><span class="lineno">  65 </span>    implementation("<span class="warning">com.google.code.gson:gson:2.10.1</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  66 </span>
-<span class="lineno">  67 </span>    // OkHttp para WebSocket e HTTP
-<span class="lineno">  68 </span>    implementation("com.squareup.okhttp3:okhttp:4.11.0")
-</pre>
-
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:68</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
-<span class="lineno">  65 </span>    implementation("com.google.code.gson:gson:2.10.1")
-<span class="lineno">  66 </span>
-<span class="lineno">  67 </span>    // OkHttp para WebSocket e HTTP
-<span class="caretline"><span class="lineno">  68 </span>    implementation("<span class="warning">com.squareup.okhttp3:okhttp:4.11.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  69 </span>
-<span class="lineno">  70 </span>    // Google Sign-In
-<span class="lineno">  71 </span>    implementation("com.google.android.gms:play-services-auth:20.7.0")
-</pre>
-
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:71</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
-<span class="lineno">  68 </span>    implementation("com.squareup.okhttp3:okhttp:4.11.0")
-<span class="lineno">  69 </span>
-<span class="lineno">  70 </span>    // Google Sign-In
-<span class="caretline"><span class="lineno">  71 </span>    implementation("<span class="warning">com.google.android.gms:play-services-auth:20.7.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  72 </span>
-<span class="lineno">  73 </span>    // Coil para carregamento de imagens
-<span class="lineno">  74 </span>    implementation("io.coil-kt:coil-compose:2.5.0")
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:73</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
+<span class="lineno">  70 </span>    implementation("androidx.navigation:navigation-compose:2.7.7")
+<span class="lineno">  71 </span>
+<span class="lineno">  72 </span>    // Retrofit para chamadas API
+<span class="caretline"><span class="lineno">  73 </span>    implementation("<span class="warning">com.squareup.retrofit2:retrofit:2.9.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  74 </span>    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+<span class="lineno">  75 </span>
+<span class="lineno">  76 </span>    // Gson para JSON
 </pre>
 
 <span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:74</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
-<span class="lineno">  71 </span>    implementation("com.google.android.gms:play-services-auth:20.7.0")
-<span class="lineno">  72 </span>
-<span class="lineno">  73 </span>    // Coil para carregamento de imagens
-<span class="caretline"><span class="lineno">  74 </span>    implementation("<span class="warning">io.coil-kt:coil-compose:2.5.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  71 </span>
+<span class="lineno">  72 </span>    // Retrofit para chamadas API
+<span class="lineno">  73 </span>    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+<span class="caretline"><span class="lineno">  74 </span>    implementation("<span class="warning">com.squareup.retrofit2:converter-gson:2.9.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span class="lineno">  75 </span>
-<span class="lineno">  76 </span>    // Accompanist para permissões
-<span class="lineno">  77 </span>    implementation("com.google.accompanist:accompanist-permissions:0.33.0-alpha")
+<span class="lineno">  76 </span>    // Gson para JSON
+<span class="lineno">  77 </span>    implementation("com.google.code.gson:gson:2.10.1")
 </pre>
 
 <span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:77</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
-<span class="lineno">  74 </span>    implementation("io.coil-kt:coil-compose:2.5.0")
+<span class="lineno">  74 </span>    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 <span class="lineno">  75 </span>
-<span class="lineno">  76 </span>    // Accompanist para permissões
-<span class="caretline"><span class="lineno">  77 </span>    implementation("<span class="warning">com.google.accompanist:accompanist-permissions:0.33.0-alpha</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  78 </span>    implementation("io.coil-kt:coil-compose:2.4.0")
-<span class="lineno">  79 </span>
+<span class="lineno">  76 </span>    // Gson para JSON
+<span class="caretline"><span class="lineno">  77 </span>    implementation("<span class="warning">com.google.code.gson:gson:2.10.1</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  78 </span>
+<span class="lineno">  79 </span>    // OkHttp para WebSocket e HTTP
+<span class="lineno">  80 </span>    implementation("com.squareup.okhttp3:okhttp:4.11.0")
 </pre>
 
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:78</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
-<span class="lineno">  75 </span>
-<span class="lineno">  76 </span>    // Accompanist para permissões
-<span class="lineno">  77 </span>    implementation("com.google.accompanist:accompanist-permissions:0.33.0-alpha")
-<span class="caretline"><span class="lineno">  78 </span>    implementation("<span class="warning">io.coil-kt:coil-compose:2.4.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  79 </span>
-<span class="lineno">  80 </span>
-<span class="lineno">  81 </span>    // Testes
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:80</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
+<span class="lineno">  77 </span>    implementation("com.google.code.gson:gson:2.10.1")
+<span class="lineno">  78 </span>
+<span class="lineno">  79 </span>    // OkHttp para WebSocket e HTTP
+<span class="caretline"><span class="lineno">  80 </span>    implementation("<span class="warning">com.squareup.okhttp3:okhttp:4.11.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  81 </span>
+<span class="lineno">  82 </span>    // Google Sign-In
+<span class="lineno">  83 </span>    implementation("com.google.android.gms:play-services-auth:20.7.0")
 </pre>
 
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:82</span>: <span class="message">Use the existing version catalog reference (<code>libs.junit</code>) instead</span><br /><pre class="errorlines">
-<span class="lineno">  79 </span>
-<span class="lineno">  80 </span>
-<span class="lineno">  81 </span>    // Testes
-<span class="caretline"><span class="lineno">  82 </span>    testImplementation("<span class="warning">junit:junit:4.13.2</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  83 </span>    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-<span class="lineno">  84 </span>    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-<span class="lineno">  85 </span>    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.6.0")
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:83</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
+<span class="lineno">  80 </span>    implementation("com.squareup.okhttp3:okhttp:4.11.0")
+<span class="lineno">  81 </span>
+<span class="lineno">  82 </span>    // Google Sign-In
+<span class="caretline"><span class="lineno">  83 </span>    implementation("<span class="warning">com.google.android.gms:play-services-auth:20.7.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  84 </span>
+<span class="lineno">  85 </span>    // Coil para carregamento de imagens
+<span class="lineno">  86 </span>    implementation("io.coil-kt:coil-compose:2.5.0")
 </pre>
 
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:83</span>: <span class="message">Use version catalog instead (androidx.test.ext:junit is already available as <code>androidx-junit</code>, but using version 1.2.1 instead)</span><br /><pre class="errorlines">
-<span class="lineno">  80 </span>
-<span class="lineno">  81 </span>    // Testes
-<span class="lineno">  82 </span>    testImplementation("junit:junit:4.13.2")
-<span class="caretline"><span class="lineno">  83 </span>    androidTestImplementation("<span class="warning">androidx.test.ext:junit:1.1.5</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  84 </span>    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-<span class="lineno">  85 </span>    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.6.0")
-</pre>
-
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:84</span>: <span class="message">Use version catalog instead (androidx.test.espresso:espresso-core is already available as <code>androidx-espresso-core</code>, but using version 3.6.1 instead)</span><br /><pre class="errorlines">
-<span class="lineno">  81 </span>    // Testes
-<span class="lineno">  82 </span>    testImplementation("junit:junit:4.13.2")
-<span class="lineno">  83 </span>    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-<span class="caretline"><span class="lineno">  84 </span>    androidTestImplementation("<span class="warning">androidx.test.espresso:espresso-core:3.5.1</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  85 </span>    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.6.0")
-<span class="lineno">  86 </span>
-<span class="lineno">  87 </span>    implementation("com.google.android.material:material:1.11.0")
-</pre>
-
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:85</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
-<span class="lineno">  82 </span>    testImplementation("junit:junit:4.13.2")
-<span class="lineno">  83 </span>    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-<span class="lineno">  84 </span>    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-<span class="caretline"><span class="lineno">  85 </span>    androidTestImplementation("<span class="warning">androidx.compose.ui:ui-test-junit4:1.6.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  86 </span>
-<span class="lineno">  87 </span>    implementation("com.google.android.material:material:1.11.0")
-</pre>
-
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:87</span>: <span class="message">Use version catalog instead (com.google.android.material:material is already available as <code>material</code>, but using version 1.12.0 instead)</span><br /><pre class="errorlines">
-<span class="lineno">  84 </span>    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-<span class="lineno">  85 </span>    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.6.0")
-<span class="lineno">  86 </span>
-<span class="caretline"><span class="lineno">  87 </span>    implementation("<span class="warning">com.google.android.material:material:1.11.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  88 </span>
-<span class="lineno">  89 </span>    implementation(platform("com.google.firebase:firebase-bom:33.11.0"))
-<span class="lineno">  90 </span>    implementation("com.google.firebase:firebase-analytics")
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:86</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
+<span class="lineno">  83 </span>    implementation("com.google.android.gms:play-services-auth:20.7.0")
+<span class="lineno">  84 </span>
+<span class="lineno">  85 </span>    // Coil para carregamento de imagens
+<span class="caretline"><span class="lineno">  86 </span>    implementation("<span class="warning">io.coil-kt:coil-compose:2.5.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  87 </span>
+<span class="lineno">  88 </span>    // Accompanist para permissões
+<span class="lineno">  89 </span>    implementation("com.google.accompanist:accompanist-permissions:0.33.0-alpha")
 </pre>
 
 <span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:89</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
-<span class="lineno">  86 </span>
-<span class="lineno">  87 </span>    implementation("com.google.android.material:material:1.11.0")
-<span class="lineno">  88 </span>
-<span class="caretline"><span class="lineno">  89 </span>    implementation(<span class="warning">platform("com.google.firebase:firebase-bom:33.11.0")</span>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  90 </span>    implementation("com.google.firebase:firebase-analytics")
+<span class="lineno">  86 </span>    implementation("io.coil-kt:coil-compose:2.5.0")
+<span class="lineno">  87 </span>
+<span class="lineno">  88 </span>    // Accompanist para permissões
+<span class="caretline"><span class="lineno">  89 </span>    implementation("<span class="warning">com.google.accompanist:accompanist-permissions:0.33.0-alpha</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  90 </span>    implementation("io.coil-kt:coil-compose:2.4.0")
 <span class="lineno">  91 </span>
-<span class="lineno">  92 </span>    implementation("io.socket:socket.io-client:2.1.0") {
 </pre>
 
 <span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:90</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
-<span class="lineno">  87 </span>    implementation("com.google.android.material:material:1.11.0")
-<span class="lineno">  88 </span>
-<span class="lineno">  89 </span>    implementation(platform("com.google.firebase:firebase-bom:33.11.0"))
-<span class="caretline"><span class="lineno">  90 </span>    implementation("<span class="warning">com.google.firebase:firebase-analytics</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  87 </span>
+<span class="lineno">  88 </span>    // Accompanist para permissões
+<span class="lineno">  89 </span>    implementation("com.google.accompanist:accompanist-permissions:0.33.0-alpha")
+<span class="caretline"><span class="lineno">  90 </span>    implementation("<span class="warning">io.coil-kt:coil-compose:2.4.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span class="lineno">  91 </span>
-<span class="lineno">  92 </span>    implementation("io.socket:socket.io-client:2.1.0") {
-<span class="lineno">  93 </span>        exclude(group = "org.json", module = "json")
+<span class="lineno">  92 </span>
+<span class="lineno">  93 </span>    // Testes
 </pre>
 
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:96</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
-<span class="lineno">  93 </span>        exclude(group = "org.json", module = "json")
-<span class="lineno">  94 </span>    }
-<span class="lineno">  95 </span>
-<span class="caretline"><span class="lineno">  96 </span>    implementation("<span class="warning">io.coil-kt:coil-compose:2.5.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  97 </span>
-<span class="lineno">  98 </span>    implementation("com.google.accompanist:accompanist-swiperefresh:0.30.1")
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:94</span>: <span class="message">Use the existing version catalog reference (<code>libs.junit</code>) instead</span><br /><pre class="errorlines">
+<span class="lineno">  91 </span>
+<span class="lineno">  92 </span>
+<span class="lineno">  93 </span>    // Testes
+<span class="caretline"><span class="lineno">  94 </span>    testImplementation("<span class="warning">junit:junit:4.13.2</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  95 </span>    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+<span class="lineno">  96 </span>    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+<span class="lineno">  97 </span>    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.6.0")
 </pre>
 
-<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:98</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
-<span class="lineno">  95 </span>
-<span class="lineno">  96 </span>    implementation("io.coil-kt:coil-compose:2.5.0")
-<span class="lineno">  97 </span>
-<span class="caretline"><span class="lineno">  98 </span>    implementation("<span class="warning">com.google.accompanist:accompanist-swiperefresh:0.30.1</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  99 </span>
-<span class="lineno"> 100 </span>}
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:95</span>: <span class="message">Use version catalog instead (androidx.test.ext:junit is already available as <code>androidx-junit</code>, but using version 1.2.1 instead)</span><br /><pre class="errorlines">
+<span class="lineno">  92 </span>
+<span class="lineno">  93 </span>    // Testes
+<span class="lineno">  94 </span>    testImplementation("junit:junit:4.13.2")
+<span class="caretline"><span class="lineno">  95 </span>    androidTestImplementation("<span class="warning">androidx.test.ext:junit:1.1.5</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  96 </span>    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+<span class="lineno">  97 </span>    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.6.0")
+</pre>
+
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:96</span>: <span class="message">Use version catalog instead (androidx.test.espresso:espresso-core is already available as <code>androidx-espresso-core</code>, but using version 3.6.1 instead)</span><br /><pre class="errorlines">
+<span class="lineno">  93 </span>    // Testes
+<span class="lineno">  94 </span>    testImplementation("junit:junit:4.13.2")
+<span class="lineno">  95 </span>    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+<span class="caretline"><span class="lineno">  96 </span>    androidTestImplementation("<span class="warning">androidx.test.espresso:espresso-core:3.5.1</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  97 </span>    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.6.0")
+<span class="lineno">  98 </span>
+<span class="lineno">  99 </span>    implementation("com.google.android.material:material:1.11.0")
+</pre>
+
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:97</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
+<span class="lineno">  94 </span>    testImplementation("junit:junit:4.13.2")
+<span class="lineno">  95 </span>    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+<span class="lineno">  96 </span>    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+<span class="caretline"><span class="lineno">  97 </span>    androidTestImplementation("<span class="warning">androidx.compose.ui:ui-test-junit4:1.6.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  98 </span>
+<span class="lineno">  99 </span>    implementation("com.google.android.material:material:1.11.0")
+</pre>
+
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:99</span>: <span class="message">Use version catalog instead (com.google.android.material:material is already available as <code>material</code>, but using version 1.12.0 instead)</span><br /><pre class="errorlines">
+<span class="lineno">  96 </span>    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+<span class="lineno">  97 </span>    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.6.0")
+<span class="lineno">  98 </span>
+<span class="caretline"><span class="lineno">  99 </span>    implementation("<span class="warning">com.google.android.material:material:1.11.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 100 </span>
+<span class="lineno"> 101 </span>    implementation(platform("com.google.firebase:firebase-bom:33.11.0"))
+<span class="lineno"> 102 </span>    implementation("com.google.firebase:firebase-analytics")
+</pre>
+
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:101</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
+<span class="lineno">  98 </span>
+<span class="lineno">  99 </span>    implementation("com.google.android.material:material:1.11.0")
+<span class="lineno"> 100 </span>
+<span class="caretline"><span class="lineno"> 101 </span>    implementation(<span class="warning">platform("com.google.firebase:firebase-bom:33.11.0")</span>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 102 </span>    implementation("com.google.firebase:firebase-analytics")
+<span class="lineno"> 103 </span>
+<span class="lineno"> 104 </span>    implementation("io.socket:socket.io-client:2.1.0") {
+</pre>
+
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:102</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
+<span class="lineno">  99 </span>    implementation("com.google.android.material:material:1.11.0")
+<span class="lineno"> 100 </span>
+<span class="lineno"> 101 </span>    implementation(platform("com.google.firebase:firebase-bom:33.11.0"))
+<span class="caretline"><span class="lineno"> 102 </span>    implementation("<span class="warning">com.google.firebase:firebase-analytics</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 103 </span>
+<span class="lineno"> 104 </span>    implementation("io.socket:socket.io-client:2.1.0") {
+<span class="lineno"> 105 </span>        exclude(group = "org.json", module = "json")
+</pre>
+
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:108</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
+<span class="lineno"> 105 </span>        exclude(group = "org.json", module = "json")
+<span class="lineno"> 106 </span>    }
+<span class="lineno"> 107 </span>
+<span class="caretline"><span class="lineno"> 108 </span>    implementation("<span class="warning">io.coil-kt:coil-compose:2.5.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 109 </span>
+<span class="lineno"> 110 </span>    implementation("com.google.accompanist:accompanist-swiperefresh:0.30.1")
+</pre>
+
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:110</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
+<span class="lineno"> 107 </span>
+<span class="lineno"> 108 </span>    implementation("io.coil-kt:coil-compose:2.5.0")
+<span class="lineno"> 109 </span>
+<span class="caretline"><span class="lineno"> 110 </span>    implementation("<span class="warning">com.google.accompanist:accompanist-swiperefresh:0.30.1</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 111 </span>
+<span class="lineno"> 112 </span>}
 </pre>
 
 </div>

@@ -28,46 +28,46 @@
         severity="warning"
         message="Use version catalog instead">
         <fix-composite
-            description="Replace with new library catalog declaration for gms-google-services"
+            description="Replace with new library catalog declaration for com-google-gms-google-services"
             robot="true">
             <fix-replace
-                description="Replace with googleServicesVersion = &quot;4.3.15&quot;..."
+                description="Replace with googleGoogleServicesVersion = &quot;4.3.15&quot;..."
                 robot="true"
                 oldString="_lint_insert_begin_"
-                replacement="googleServicesVersion = &quot;4.3.15&quot;&#xA;">
+                replacement="googleGoogleServicesVersion = &quot;4.3.15&quot;&#xA;">
                 <range
                     file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
                     startOffset="25"
                     endOffset="25"/>
             </fix-replace>
             <fix-replace
-                description="Replace with gms-google-services = { module = &quot;com.google.gms:google-services&quot;, version.ref = &quot;googleServicesVersion&quot; }..."
+                description="Replace with com-google-gms-google-services = { module = &quot;com.google.gms:google-services&quot;, version.ref = &quot;googleGoogleServicesVersion&quot; }..."
                 robot="true"
                 oldString="_lint_insert_begin_"
-                replacement="gms-google-services = { module = &quot;com.google.gms:google-services&quot;, version.ref = &quot;googleServicesVersion&quot; }&#xA;">
+                replacement="com-google-gms-google-services = { module = &quot;com.google.gms:google-services&quot;, version.ref = &quot;googleGoogleServicesVersion&quot; }&#xA;">
                 <range
                     file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
                     startOffset="270"
                     endOffset="270"/>
             </fix-replace>
             <fix-replace
-                description="Replace with libs.gms.google.services"
+                description="Replace with libs.com.google.gms.google.services"
                 robot="true"
-                replacement="libs.gms.google.services">
+                replacement="libs.com.google.gms.google.services">
                 <range
                     file="${:app*projectDir}/build.gradle.kts"
-                    startOffset="207"
-                    endOffset="246"/>
+                    startOffset="535"
+                    endOffset="574"/>
             </fix-replace>
         </fix-composite>
         <location
             file="${:app*projectDir}/build.gradle.kts"
-            line="10"
+            line="19"
             column="20"
-            startOffset="208"
-            endLine="10"
+            startOffset="536"
+            endLine="19"
             endColumn="57"
-            endOffset="245"/>
+            endOffset="573"/>
     </incident>
 
     <incident
@@ -80,12 +80,12 @@
             replacement="35"/>
         <location
             file="${:app*projectDir}/build.gradle.kts"
-            line="21"
+            line="30"
             column="9"
-            startOffset="474"
-            endLine="21"
+            startOffset="802"
+            endLine="30"
             endColumn="23"
-            endOffset="488"/>
+            endOffset="816"/>
     </incident>
 
     <incident
@@ -93,168 +93,60 @@
         severity="warning"
         message="Use version catalog instead">
         <fix-composite
-            description="Replace with new library catalog declaration for compose-bom"
+            description="Replace with new library catalog declaration for androidx-compose-compose-bom2"
             robot="true">
             <fix-replace
-                description="Replace with composeBomVersion = &quot;2024.03.00&quot;..."
+                description="Replace with androidxComposeBomVersion = &quot;2024.03.00&quot;..."
                 robot="true"
                 oldString="_lint_insert_begin_"
-                replacement="composeBomVersion = &quot;2024.03.00&quot;&#xA;">
+                replacement="androidxComposeBomVersion = &quot;2024.03.00&quot;&#xA;">
                 <range
                     file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
                     startOffset="25"
                     endOffset="25"/>
             </fix-replace>
             <fix-replace
-                description="Replace with compose-bom = { module = &quot;androidx.compose:compose-bom&quot;, version.ref = &quot;composeBomVersion&quot; }..."
+                description="Replace with androidx-compose-compose-bom2 = { module = &quot;androidx.compose:compose-bom&quot;, version.ref = &quot;androidxComposeBomVersion&quot; }..."
                 robot="true"
                 oldString="_lint_insert_begin_"
-                replacement="compose-bom = { module = &quot;androidx.compose:compose-bom&quot;, version.ref = &quot;composeBomVersion&quot; }&#xA;">
-                <range
-                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
-                    startOffset="270"
-                    endOffset="270"/>
-            </fix-replace>
-            <fix-replace
-                description="Replace with libs.compose.bom"
-                robot="true"
-                replacement="libs.compose.bom">
-                <range
-                    file="${:app*projectDir}/build.gradle.kts"
-                    startOffset="1070"
-                    endOffset="1121"/>
-            </fix-replace>
-        </fix-composite>
-        <location
-            file="${:app*projectDir}/build.gradle.kts"
-            line="51"
-            column="20"
-            startOffset="1070"
-            endLine="51"
-            endColumn="71"
-            endOffset="1121"/>
-    </incident>
-
-    <incident
-        id="UseTomlInstead"
-        severity="warning"
-        message="Use version catalog instead">
-        <location
-            file="${:app*projectDir}/build.gradle.kts"
-            line="52"
-            column="21"
-            startOffset="1143"
-            endLine="52"
-            endColumn="43"
-            endOffset="1165"/>
-    </incident>
-
-    <incident
-        id="UseTomlInstead"
-        severity="warning"
-        message="Use version catalog instead">
-        <fix-composite
-            description="Replace with new library catalog declaration for ui-tooling-preview"
-            robot="true">
-            <fix-replace
-                description="Replace with uiToolingPreviewVersion = &quot;1.6.0&quot;..."
-                robot="true"
-                oldString="_lint_insert_begin_"
-                replacement="uiToolingPreviewVersion = &quot;1.6.0&quot;&#xA;">
-                <range
-                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
-                    startOffset="165"
-                    endOffset="165"/>
-            </fix-replace>
-            <fix-replace
-                description="Replace with ui-tooling-preview = { module = &quot;androidx.compose.ui:ui-tooling-preview&quot;, version.ref = &quot;uiToolingPreviewVersion&quot; }..."
-                robot="true"
-                oldString="_lint_insert_begin_"
-                replacement="ui-tooling-preview = { module = &quot;androidx.compose.ui:ui-tooling-preview&quot;, version.ref = &quot;uiToolingPreviewVersion&quot; }&#xA;">
-                <range
-                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
-                    startOffset="747"
-                    endOffset="747"/>
-            </fix-replace>
-            <fix-replace
-                description="Replace with libs.ui.tooling.preview"
-                robot="true"
-                replacement="libs.ui.tooling.preview">
-                <range
-                    file="${:app*projectDir}/build.gradle.kts"
-                    startOffset="1187"
-                    endOffset="1233"/>
-            </fix-replace>
-        </fix-composite>
-        <location
-            file="${:app*projectDir}/build.gradle.kts"
-            line="53"
-            column="21"
-            startOffset="1188"
-            endLine="53"
-            endColumn="65"
-            endOffset="1232"/>
-    </incident>
-
-    <incident
-        id="UseTomlInstead"
-        severity="warning"
-        message="Use version catalog instead">
-        <location
-            file="${:app*projectDir}/build.gradle.kts"
-            line="54"
-            column="21"
-            startOffset="1255"
-            endLine="54"
-            endColumn="57"
-            endOffset="1291"/>
-    </incident>
-
-    <incident
-        id="UseTomlInstead"
-        severity="warning"
-        message="Use version catalog instead">
-        <fix-composite
-            description="Replace with new library catalog declaration for activity-compose"
-            robot="true">
-            <fix-replace
-                description="Replace with activityComposeVersion = &quot;1.8.0&quot;..."
-                robot="true"
-                oldString="_lint_insert_begin_"
-                replacement="activityComposeVersion = &quot;1.8.0&quot;&#xA;">
-                <range
-                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
-                    startOffset="11"
-                    endOffset="11"/>
-            </fix-replace>
-            <fix-replace
-                description="Replace with activity-compose = { module = &quot;androidx.activity:activity-compose&quot;, version.ref = &quot;activityComposeVersion&quot; }..."
-                robot="true"
-                oldString="_lint_insert_begin_"
-                replacement="activity-compose = { module = &quot;androidx.activity:activity-compose&quot;, version.ref = &quot;activityComposeVersion&quot; }&#xA;">
+                replacement="androidx-compose-compose-bom2 = { module = &quot;androidx.compose:compose-bom&quot;, version.ref = &quot;androidxComposeBomVersion&quot; }&#xA;">
                 <range
                     file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
                     startOffset="178"
                     endOffset="178"/>
             </fix-replace>
             <fix-replace
-                description="Replace with libs.activity.compose"
+                description="Replace with libs.androidx.compose.compose.bom2"
                 robot="true"
-                replacement="libs.activity.compose">
+                replacement="libs.androidx.compose.compose.bom2">
                 <range
                     file="${:app*projectDir}/build.gradle.kts"
-                    startOffset="1313"
-                    endOffset="1355"/>
+                    startOffset="1581"
+                    endOffset="1632"/>
             </fix-replace>
         </fix-composite>
         <location
             file="${:app*projectDir}/build.gradle.kts"
-            line="55"
+            line="63"
+            column="20"
+            startOffset="1581"
+            endLine="63"
+            endColumn="71"
+            endOffset="1632"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="64"
             column="21"
-            startOffset="1314"
-            endLine="55"
-            endColumn="61"
-            endOffset="1354"/>
+            startOffset="1654"
+            endLine="64"
+            endColumn="43"
+            endOffset="1676"/>
     </incident>
 
     <incident
@@ -262,234 +154,60 @@
         severity="warning"
         message="Use version catalog instead">
         <fix-composite
-            description="Replace with new library catalog declaration for navigation-compose"
+            description="Replace with new library catalog declaration for androidx-compose-ui-ui-tooling-preview2"
             robot="true">
             <fix-replace
-                description="Replace with navigationComposeVersion = &quot;2.7.7&quot;..."
+                description="Replace with androidxUiToolingPreviewVersion = &quot;1.6.0&quot;..."
                 robot="true"
                 oldString="_lint_insert_begin_"
-                replacement="navigationComposeVersion = &quot;2.7.7&quot;&#xA;">
-                <range
-                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
-                    startOffset="165"
-                    endOffset="165"/>
-            </fix-replace>
-            <fix-replace
-                description="Replace with navigation-compose = { module = &quot;androidx.navigation:navigation-compose&quot;, version.ref = &quot;navigationComposeVersion&quot; }..."
-                robot="true"
-                oldString="_lint_insert_begin_"
-                replacement="navigation-compose = { module = &quot;androidx.navigation:navigation-compose&quot;, version.ref = &quot;navigationComposeVersion&quot; }&#xA;">
-                <range
-                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
-                    startOffset="747"
-                    endOffset="747"/>
-            </fix-replace>
-            <fix-replace
-                description="Replace with libs.navigation.compose"
-                robot="true"
-                replacement="libs.navigation.compose">
-                <range
-                    file="${:app*projectDir}/build.gradle.kts"
-                    startOffset="1405"
-                    endOffset="1451"/>
-            </fix-replace>
-        </fix-composite>
-        <location
-            file="${:app*projectDir}/build.gradle.kts"
-            line="58"
-            column="21"
-            startOffset="1406"
-            endLine="58"
-            endColumn="65"
-            endOffset="1450"/>
-    </incident>
-
-    <incident
-        id="UseTomlInstead"
-        severity="warning"
-        message="Use version catalog instead">
-        <fix-composite
-            description="Replace with new library catalog declaration for retrofit2-retrofit"
-            robot="true">
-            <fix-replace
-                description="Replace with retrofitVersion = &quot;2.9.0&quot;..."
-                robot="true"
-                oldString="_lint_insert_begin_"
-                replacement="retrofitVersion = &quot;2.9.0&quot;&#xA;">
-                <range
-                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
-                    startOffset="165"
-                    endOffset="165"/>
-            </fix-replace>
-            <fix-replace
-                description="Replace with retrofit2-retrofit = { module = &quot;com.squareup.retrofit2:retrofit&quot;, version.ref = &quot;retrofitVersion&quot; }..."
-                robot="true"
-                oldString="_lint_insert_begin_"
-                replacement="retrofit2-retrofit = { module = &quot;com.squareup.retrofit2:retrofit&quot;, version.ref = &quot;retrofitVersion&quot; }&#xA;">
-                <range
-                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
-                    startOffset="747"
-                    endOffset="747"/>
-            </fix-replace>
-            <fix-replace
-                description="Replace with libs.retrofit2.retrofit"
-                robot="true"
-                replacement="libs.retrofit2.retrofit">
-                <range
-                    file="${:app*projectDir}/build.gradle.kts"
-                    startOffset="1507"
-                    endOffset="1546"/>
-            </fix-replace>
-        </fix-composite>
-        <location
-            file="${:app*projectDir}/build.gradle.kts"
-            line="61"
-            column="21"
-            startOffset="1508"
-            endLine="61"
-            endColumn="58"
-            endOffset="1545"/>
-    </incident>
-
-    <incident
-        id="UseTomlInstead"
-        severity="warning"
-        message="Use version catalog instead">
-        <fix-composite
-            description="Replace with new library catalog declaration for retrofit2-converter-gson"
-            robot="true">
-            <fix-replace
-                description="Replace with converterGsonVersion = &quot;2.9.0&quot;..."
-                robot="true"
-                oldString="_lint_insert_begin_"
-                replacement="converterGsonVersion = &quot;2.9.0&quot;&#xA;">
+                replacement="androidxUiToolingPreviewVersion = &quot;1.6.0&quot;&#xA;">
                 <range
                     file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
                     startOffset="25"
                     endOffset="25"/>
             </fix-replace>
             <fix-replace
-                description="Replace with retrofit2-converter-gson = { module = &quot;com.squareup.retrofit2:converter-gson&quot;, version.ref = &quot;converterGsonVersion&quot; }..."
+                description="Replace with androidx-compose-ui-ui-tooling-preview2 = { module = &quot;androidx.compose.ui:ui-tooling-preview&quot;, version.ref = &quot;androidxUiToolingPreviewVersion&quot; }..."
                 robot="true"
                 oldString="_lint_insert_begin_"
-                replacement="retrofit2-converter-gson = { module = &quot;com.squareup.retrofit2:converter-gson&quot;, version.ref = &quot;converterGsonVersion&quot; }&#xA;">
+                replacement="androidx-compose-ui-ui-tooling-preview2 = { module = &quot;androidx.compose.ui:ui-tooling-preview&quot;, version.ref = &quot;androidxUiToolingPreviewVersion&quot; }&#xA;">
                 <range
                     file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
-                    startOffset="747"
-                    endOffset="747"/>
+                    startOffset="178"
+                    endOffset="178"/>
             </fix-replace>
             <fix-replace
-                description="Replace with libs.retrofit2.converter.gson"
+                description="Replace with libs.androidx.compose.ui.ui.tooling.preview2"
                 robot="true"
-                replacement="libs.retrofit2.converter.gson">
+                replacement="libs.androidx.compose.ui.ui.tooling.preview2">
                 <range
                     file="${:app*projectDir}/build.gradle.kts"
-                    startOffset="1567"
-                    endOffset="1612"/>
-            </fix-replace>
-        </fix-composite>
-        <location
-            file="${:app*projectDir}/build.gradle.kts"
-            line="62"
-            column="21"
-            startOffset="1568"
-            endLine="62"
-            endColumn="64"
-            endOffset="1611"/>
-    </incident>
-
-    <incident
-        id="UseTomlInstead"
-        severity="warning"
-        message="Use version catalog instead">
-        <fix-composite
-            description="Replace with new library catalog declaration for google-gson"
-            robot="true">
-            <fix-replace
-                description="Replace with gsonVersion = &quot;2.10.1&quot;..."
-                robot="true"
-                oldString="_lint_insert_begin_"
-                replacement="gsonVersion = &quot;2.10.1&quot;&#xA;">
-                <range
-                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
-                    startOffset="25"
-                    endOffset="25"/>
-            </fix-replace>
-            <fix-replace
-                description="Replace with google-gson = { module = &quot;com.google.code.gson:gson&quot;, version.ref = &quot;gsonVersion&quot; }..."
-                robot="true"
-                oldString="_lint_insert_begin_"
-                replacement="google-gson = { module = &quot;com.google.code.gson:gson&quot;, version.ref = &quot;gsonVersion&quot; }&#xA;">
-                <range
-                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
-                    startOffset="270"
-                    endOffset="270"/>
-            </fix-replace>
-            <fix-replace
-                description="Replace with libs.google.gson"
-                robot="true"
-                replacement="libs.google.gson">
-                <range
-                    file="${:app*projectDir}/build.gradle.kts"
-                    startOffset="1656"
-                    endOffset="1690"/>
+                    startOffset="1698"
+                    endOffset="1744"/>
             </fix-replace>
         </fix-composite>
         <location
             file="${:app*projectDir}/build.gradle.kts"
             line="65"
             column="21"
-            startOffset="1657"
+            startOffset="1699"
             endLine="65"
-            endColumn="53"
-            endOffset="1689"/>
+            endColumn="65"
+            endOffset="1743"/>
     </incident>
 
     <incident
         id="UseTomlInstead"
         severity="warning"
         message="Use version catalog instead">
-        <fix-composite
-            description="Replace with new library catalog declaration for okhttp3-okhttp"
-            robot="true">
-            <fix-replace
-                description="Replace with okhttpVersion = &quot;4.11.0&quot;..."
-                robot="true"
-                oldString="_lint_insert_begin_"
-                replacement="okhttpVersion = &quot;4.11.0&quot;&#xA;">
-                <range
-                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
-                    startOffset="165"
-                    endOffset="165"/>
-            </fix-replace>
-            <fix-replace
-                description="Replace with okhttp3-okhttp = { module = &quot;com.squareup.okhttp3:okhttp&quot;, version.ref = &quot;okhttpVersion&quot; }..."
-                robot="true"
-                oldString="_lint_insert_begin_"
-                replacement="okhttp3-okhttp = { module = &quot;com.squareup.okhttp3:okhttp&quot;, version.ref = &quot;okhttpVersion&quot; }&#xA;">
-                <range
-                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
-                    startOffset="747"
-                    endOffset="747"/>
-            </fix-replace>
-            <fix-replace
-                description="Replace with libs.okhttp3.okhttp"
-                robot="true"
-                replacement="libs.okhttp3.okhttp">
-                <range
-                    file="${:app*projectDir}/build.gradle.kts"
-                    startOffset="1748"
-                    endOffset="1784"/>
-            </fix-replace>
-        </fix-composite>
         <location
             file="${:app*projectDir}/build.gradle.kts"
-            line="68"
+            line="66"
             column="21"
-            startOffset="1749"
-            endLine="68"
-            endColumn="55"
-            endOffset="1783"/>
+            startOffset="1766"
+            endLine="66"
+            endColumn="57"
+            endOffset="1802"/>
     </incident>
 
     <incident
@@ -497,93 +215,187 @@
         severity="warning"
         message="Use version catalog instead">
         <fix-composite
-            description="Replace with new library catalog declaration for gms-play-services-auth"
+            description="Replace with new library catalog declaration for androidx-activity-activity-compose2"
             robot="true">
             <fix-replace
-                description="Replace with playServicesAuthVersion = &quot;20.7.0&quot;..."
+                description="Replace with androidxActivityComposeVersion = &quot;1.8.0&quot;..."
                 robot="true"
                 oldString="_lint_insert_begin_"
-                replacement="playServicesAuthVersion = &quot;20.7.0&quot;&#xA;">
-                <range
-                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
-                    startOffset="165"
-                    endOffset="165"/>
-            </fix-replace>
-            <fix-replace
-                description="Replace with gms-play-services-auth = { module = &quot;com.google.android.gms:play-services-auth&quot;, version.ref = &quot;playServicesAuthVersion&quot; }..."
-                robot="true"
-                oldString="_lint_insert_begin_"
-                replacement="gms-play-services-auth = { module = &quot;com.google.android.gms:play-services-auth&quot;, version.ref = &quot;playServicesAuthVersion&quot; }&#xA;">
-                <range
-                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
-                    startOffset="270"
-                    endOffset="270"/>
-            </fix-replace>
-            <fix-replace
-                description="Replace with libs.gms.play.services.auth"
-                robot="true"
-                replacement="libs.gms.play.services.auth">
-                <range
-                    file="${:app*projectDir}/build.gradle.kts"
-                    startOffset="1828"
-                    endOffset="1878"/>
-            </fix-replace>
-        </fix-composite>
-        <location
-            file="${:app*projectDir}/build.gradle.kts"
-            line="71"
-            column="21"
-            startOffset="1829"
-            endLine="71"
-            endColumn="69"
-            endOffset="1877"/>
-    </incident>
-
-    <incident
-        id="UseTomlInstead"
-        severity="warning"
-        message="Use version catalog instead">
-        <fix-composite
-            description="Replace with new library catalog declaration for io-coil-kt-coil-compose2"
-            robot="true">
-            <fix-replace
-                description="Replace with coilKtCoilComposeVersion = &quot;2.5.0&quot;..."
-                robot="true"
-                oldString="_lint_insert_begin_"
-                replacement="coilKtCoilComposeVersion = &quot;2.5.0&quot;&#xA;">
+                replacement="androidxActivityComposeVersion = &quot;1.8.0&quot;&#xA;">
                 <range
                     file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
                     startOffset="25"
                     endOffset="25"/>
             </fix-replace>
             <fix-replace
-                description="Replace with io-coil-kt-coil-compose2 = { module = &quot;io.coil-kt:coil-compose&quot;, version.ref = &quot;coilKtCoilComposeVersion&quot; }..."
+                description="Replace with androidx-activity-activity-compose2 = { module = &quot;androidx.activity:activity-compose&quot;, version.ref = &quot;androidxActivityComposeVersion&quot; }..."
                 robot="true"
                 oldString="_lint_insert_begin_"
-                replacement="io-coil-kt-coil-compose2 = { module = &quot;io.coil-kt:coil-compose&quot;, version.ref = &quot;coilKtCoilComposeVersion&quot; }&#xA;">
+                replacement="androidx-activity-activity-compose2 = { module = &quot;androidx.activity:activity-compose&quot;, version.ref = &quot;androidxActivityComposeVersion&quot; }&#xA;">
+                <range
+                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
+                    startOffset="178"
+                    endOffset="178"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.androidx.activity.activity.compose2"
+                robot="true"
+                replacement="libs.androidx.activity.activity.compose2">
+                <range
+                    file="${:app*projectDir}/build.gradle.kts"
+                    startOffset="1824"
+                    endOffset="1866"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="67"
+            column="21"
+            startOffset="1825"
+            endLine="67"
+            endColumn="61"
+            endOffset="1865"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for androidx-navigation-navigation-compose2"
+            robot="true">
+            <fix-replace
+                description="Replace with androidxNavigationComposeVersion = &quot;2.7.7&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="androidxNavigationComposeVersion = &quot;2.7.7&quot;&#xA;">
+                <range
+                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
+                    startOffset="25"
+                    endOffset="25"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with androidx-navigation-navigation-compose2 = { module = &quot;androidx.navigation:navigation-compose&quot;, version.ref = &quot;androidxNavigationComposeVersion&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="androidx-navigation-navigation-compose2 = { module = &quot;androidx.navigation:navigation-compose&quot;, version.ref = &quot;androidxNavigationComposeVersion&quot; }&#xA;">
                 <range
                     file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
                     startOffset="270"
                     endOffset="270"/>
             </fix-replace>
             <fix-replace
-                description="Replace with libs.io.coil.kt.coil.compose2"
+                description="Replace with libs.androidx.navigation.navigation.compose2"
                 robot="true"
-                replacement="libs.io.coil.kt.coil.compose2">
+                replacement="libs.androidx.navigation.navigation.compose2">
                 <range
                     file="${:app*projectDir}/build.gradle.kts"
-                    startOffset="1941"
-                    endOffset="1972"/>
+                    startOffset="1916"
+                    endOffset="1962"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="70"
+            column="21"
+            startOffset="1917"
+            endLine="70"
+            endColumn="65"
+            endOffset="1961"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for com-squareup-retrofit2-retrofit"
+            robot="true">
+            <fix-replace
+                description="Replace with squareupRetrofitVersion = &quot;2.9.0&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="squareupRetrofitVersion = &quot;2.9.0&quot;&#xA;">
+                <range
+                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
+                    startOffset="165"
+                    endOffset="165"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with com-squareup-retrofit2-retrofit = { module = &quot;com.squareup.retrofit2:retrofit&quot;, version.ref = &quot;squareupRetrofitVersion&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="com-squareup-retrofit2-retrofit = { module = &quot;com.squareup.retrofit2:retrofit&quot;, version.ref = &quot;squareupRetrofitVersion&quot; }&#xA;">
+                <range
+                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
+                    startOffset="270"
+                    endOffset="270"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.com.squareup.retrofit2.retrofit"
+                robot="true"
+                replacement="libs.com.squareup.retrofit2.retrofit">
+                <range
+                    file="${:app*projectDir}/build.gradle.kts"
+                    startOffset="2018"
+                    endOffset="2057"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="73"
+            column="21"
+            startOffset="2019"
+            endLine="73"
+            endColumn="58"
+            endOffset="2056"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for com-squareup-retrofit2-converter-gson"
+            robot="true">
+            <fix-replace
+                description="Replace with squareupConverterGsonVersion = &quot;2.9.0&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="squareupConverterGsonVersion = &quot;2.9.0&quot;&#xA;">
+                <range
+                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
+                    startOffset="165"
+                    endOffset="165"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with com-squareup-retrofit2-converter-gson = { module = &quot;com.squareup.retrofit2:converter-gson&quot;, version.ref = &quot;squareupConverterGsonVersion&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="com-squareup-retrofit2-converter-gson = { module = &quot;com.squareup.retrofit2:converter-gson&quot;, version.ref = &quot;squareupConverterGsonVersion&quot; }&#xA;">
+                <range
+                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
+                    startOffset="270"
+                    endOffset="270"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.com.squareup.retrofit2.converter.gson"
+                robot="true"
+                replacement="libs.com.squareup.retrofit2.converter.gson">
+                <range
+                    file="${:app*projectDir}/build.gradle.kts"
+                    startOffset="2078"
+                    endOffset="2123"/>
             </fix-replace>
         </fix-composite>
         <location
             file="${:app*projectDir}/build.gradle.kts"
             line="74"
             column="21"
-            startOffset="1942"
+            startOffset="2079"
             endLine="74"
-            endColumn="50"
-            endOffset="1971"/>
+            endColumn="64"
+            endOffset="2122"/>
     </incident>
 
     <incident
@@ -591,93 +403,281 @@
         severity="warning"
         message="Use version catalog instead">
         <fix-composite
-            description="Replace with new library catalog declaration for google-accompanist-permissions"
+            description="Replace with new library catalog declaration for com-google-code-gson-gson2"
             robot="true">
             <fix-replace
-                description="Replace with accompanistPermissionsVersion = &quot;0.33.0-alpha&quot;..."
+                description="Replace with googleGsonVersion = &quot;2.10.1&quot;..."
                 robot="true"
                 oldString="_lint_insert_begin_"
-                replacement="accompanistPermissionsVersion = &quot;0.33.0-alpha&quot;&#xA;">
-                <range
-                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
-                    startOffset="11"
-                    endOffset="11"/>
-            </fix-replace>
-            <fix-replace
-                description="Replace with google-accompanist-permissions = { module = &quot;com.google.accompanist:accompanist-permissions&quot;, version.ref = &quot;accompanistPermissionsVersion&quot; }..."
-                robot="true"
-                oldString="_lint_insert_begin_"
-                replacement="google-accompanist-permissions = { module = &quot;com.google.accompanist:accompanist-permissions&quot;, version.ref = &quot;accompanistPermissionsVersion&quot; }&#xA;">
-                <range
-                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
-                    startOffset="270"
-                    endOffset="270"/>
-            </fix-replace>
-            <fix-replace
-                description="Replace with libs.google.accompanist.permissions"
-                robot="true"
-                replacement="libs.google.accompanist.permissions">
-                <range
-                    file="${:app*projectDir}/build.gradle.kts"
-                    startOffset="2029"
-                    endOffset="2090"/>
-            </fix-replace>
-        </fix-composite>
-        <location
-            file="${:app*projectDir}/build.gradle.kts"
-            line="77"
-            column="21"
-            startOffset="2030"
-            endLine="77"
-            endColumn="80"
-            endOffset="2089"/>
-    </incident>
-
-    <incident
-        id="UseTomlInstead"
-        severity="warning"
-        message="Use version catalog instead">
-        <fix-composite
-            description="Replace with new library catalog declaration for io-coil-kt-coil-compose3"
-            robot="true">
-            <fix-replace
-                description="Replace with ioCoilKtCoilCompose = &quot;2.4.0&quot;..."
-                robot="true"
-                oldString="_lint_insert_begin_"
-                replacement="ioCoilKtCoilCompose = &quot;2.4.0&quot;&#xA;">
+                replacement="googleGsonVersion = &quot;2.10.1&quot;&#xA;">
                 <range
                     file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
                     startOffset="25"
                     endOffset="25"/>
             </fix-replace>
             <fix-replace
-                description="Replace with io-coil-kt-coil-compose3 = { module = &quot;io.coil-kt:coil-compose&quot;, version.ref = &quot;ioCoilKtCoilCompose&quot; }..."
+                description="Replace with com-google-code-gson-gson2 = { module = &quot;com.google.code.gson:gson&quot;, version.ref = &quot;googleGsonVersion&quot; }..."
                 robot="true"
                 oldString="_lint_insert_begin_"
-                replacement="io-coil-kt-coil-compose3 = { module = &quot;io.coil-kt:coil-compose&quot;, version.ref = &quot;ioCoilKtCoilCompose&quot; }&#xA;">
+                replacement="com-google-code-gson-gson2 = { module = &quot;com.google.code.gson:gson&quot;, version.ref = &quot;googleGsonVersion&quot; }&#xA;">
                 <range
                     file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
                     startOffset="270"
                     endOffset="270"/>
             </fix-replace>
             <fix-replace
-                description="Replace with libs.io.coil.kt.coil.compose3"
+                description="Replace with libs.com.google.code.gson.gson2"
                 robot="true"
-                replacement="libs.io.coil.kt.coil.compose3">
+                replacement="libs.com.google.code.gson.gson2">
                 <range
                     file="${:app*projectDir}/build.gradle.kts"
-                    startOffset="2111"
-                    endOffset="2142"/>
+                    startOffset="2167"
+                    endOffset="2201"/>
             </fix-replace>
         </fix-composite>
         <location
             file="${:app*projectDir}/build.gradle.kts"
-            line="78"
+            line="77"
             column="21"
-            startOffset="2112"
-            endLine="78"
+            startOffset="2168"
+            endLine="77"
+            endColumn="53"
+            endOffset="2200"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for com-squareup-okhttp3-okhttp"
+            robot="true">
+            <fix-replace
+                description="Replace with squareupOkhttpVersion = &quot;4.11.0&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="squareupOkhttpVersion = &quot;4.11.0&quot;&#xA;">
+                <range
+                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
+                    startOffset="165"
+                    endOffset="165"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with com-squareup-okhttp3-okhttp = { module = &quot;com.squareup.okhttp3:okhttp&quot;, version.ref = &quot;squareupOkhttpVersion&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="com-squareup-okhttp3-okhttp = { module = &quot;com.squareup.okhttp3:okhttp&quot;, version.ref = &quot;squareupOkhttpVersion&quot; }&#xA;">
+                <range
+                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
+                    startOffset="270"
+                    endOffset="270"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.com.squareup.okhttp3.okhttp"
+                robot="true"
+                replacement="libs.com.squareup.okhttp3.okhttp">
+                <range
+                    file="${:app*projectDir}/build.gradle.kts"
+                    startOffset="2259"
+                    endOffset="2295"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="80"
+            column="21"
+            startOffset="2260"
+            endLine="80"
+            endColumn="55"
+            endOffset="2294"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for com-google-android-gms-play-services-auth"
+            robot="true">
+            <fix-replace
+                description="Replace with googlePlayServicesAuthVersion = &quot;20.7.0&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="googlePlayServicesAuthVersion = &quot;20.7.0&quot;&#xA;">
+                <range
+                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
+                    startOffset="25"
+                    endOffset="25"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with com-google-android-gms-play-services-auth = { module = &quot;com.google.android.gms:play-services-auth&quot;, version.ref = &quot;googlePlayServicesAuthVersion&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="com-google-android-gms-play-services-auth = { module = &quot;com.google.android.gms:play-services-auth&quot;, version.ref = &quot;googlePlayServicesAuthVersion&quot; }&#xA;">
+                <range
+                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
+                    startOffset="270"
+                    endOffset="270"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.com.google.android.gms.play.services.auth"
+                robot="true"
+                replacement="libs.com.google.android.gms.play.services.auth">
+                <range
+                    file="${:app*projectDir}/build.gradle.kts"
+                    startOffset="2339"
+                    endOffset="2389"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="83"
+            column="21"
+            startOffset="2340"
+            endLine="83"
+            endColumn="69"
+            endOffset="2388"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for io-coil-kt-coil-compose8"
+            robot="true">
+            <fix-replace
+                description="Replace with ioCoilKtCoilCompose6 = &quot;2.5.0&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="ioCoilKtCoilCompose6 = &quot;2.5.0&quot;&#xA;">
+                <range
+                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
+                    startOffset="25"
+                    endOffset="25"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with io-coil-kt-coil-compose8 = { module = &quot;io.coil-kt:coil-compose&quot;, version.ref = &quot;ioCoilKtCoilCompose6&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="io-coil-kt-coil-compose8 = { module = &quot;io.coil-kt:coil-compose&quot;, version.ref = &quot;ioCoilKtCoilCompose6&quot; }&#xA;">
+                <range
+                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
+                    startOffset="270"
+                    endOffset="270"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.io.coil.kt.coil.compose8"
+                robot="true"
+                replacement="libs.io.coil.kt.coil.compose8">
+                <range
+                    file="${:app*projectDir}/build.gradle.kts"
+                    startOffset="2452"
+                    endOffset="2483"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="86"
+            column="21"
+            startOffset="2453"
+            endLine="86"
             endColumn="50"
-            endOffset="2141"/>
+            endOffset="2482"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for com-google-accompanist-accompanist-permissions2"
+            robot="true">
+            <fix-replace
+                description="Replace with googleAccompanistPermissionsVersion = &quot;0.33.0-alpha&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="googleAccompanistPermissionsVersion = &quot;0.33.0-alpha&quot;&#xA;">
+                <range
+                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
+                    startOffset="25"
+                    endOffset="25"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with com-google-accompanist-accompanist-permissions2 = { module = &quot;com.google.accompanist:accompanist-permissions&quot;, version.ref = &quot;googleAccompanistPermissionsVersion&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="com-google-accompanist-accompanist-permissions2 = { module = &quot;com.google.accompanist:accompanist-permissions&quot;, version.ref = &quot;googleAccompanistPermissionsVersion&quot; }&#xA;">
+                <range
+                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
+                    startOffset="270"
+                    endOffset="270"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.com.google.accompanist.accompanist.permissions2"
+                robot="true"
+                replacement="libs.com.google.accompanist.accompanist.permissions2">
+                <range
+                    file="${:app*projectDir}/build.gradle.kts"
+                    startOffset="2540"
+                    endOffset="2601"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="89"
+            column="21"
+            startOffset="2541"
+            endLine="89"
+            endColumn="80"
+            endOffset="2600"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for io-coil-kt-coil-compose9"
+            robot="true">
+            <fix-replace
+                description="Replace with ioCoilKtCoilCompose7 = &quot;2.4.0&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="ioCoilKtCoilCompose7 = &quot;2.4.0&quot;&#xA;">
+                <range
+                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
+                    startOffset="25"
+                    endOffset="25"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with io-coil-kt-coil-compose9 = { module = &quot;io.coil-kt:coil-compose&quot;, version.ref = &quot;ioCoilKtCoilCompose7&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="io-coil-kt-coil-compose9 = { module = &quot;io.coil-kt:coil-compose&quot;, version.ref = &quot;ioCoilKtCoilCompose7&quot; }&#xA;">
+                <range
+                    file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
+                    startOffset="270"
+                    endOffset="270"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.io.coil.kt.coil.compose9"
+                robot="true"
+                replacement="libs.io.coil.kt.coil.compose9">
+                <range
+                    file="${:app*projectDir}/build.gradle.kts"
+                    startOffset="2622"
+                    endOffset="2653"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="90"
+            column="21"
+            startOffset="2623"
+            endLine="90"
+            endColumn="50"
+            endOffset="2652"/>
     </incident>
 
     <incident
@@ -691,17 +691,17 @@
             replacement="libs.junit">
             <range
                 file="${:app*projectDir}/build.gradle.kts"
-                startOffset="2183"
-                endOffset="2203"/>
+                startOffset="2694"
+                endOffset="2714"/>
         </fix-replace>
         <location
             file="${:app*projectDir}/build.gradle.kts"
-            line="82"
+            line="94"
             column="25"
-            startOffset="2184"
-            endLine="82"
+            startOffset="2695"
+            endLine="94"
             endColumn="43"
-            endOffset="2202"/>
+            endOffset="2713"/>
     </incident>
 
     <incident
@@ -710,40 +710,40 @@
         message="Use version catalog instead (androidx.test.ext:junit is already available as `androidx-junit`, but using version 1.2.1 instead)">
         <fix-alternatives>
             <fix-composite
-                description="Replace with new library catalog declaration for junit-v115"
+                description="Replace with new library catalog declaration for androidx-test-ext-junit-v115"
                 robot="true"
                 independent="true">
                 <fix-replace
-                    description="Replace with androidxJunitVersion = &quot;1.1.5&quot;..."
+                    description="Replace with androidxTestExtJunit2 = &quot;1.1.5&quot;..."
                     robot="true"
                     independent="true"
                     oldString="_lint_insert_begin_"
-                    replacement="androidxJunitVersion = &quot;1.1.5&quot;&#xA;">
+                    replacement="androidxTestExtJunit2 = &quot;1.1.5&quot;&#xA;">
                     <range
                         file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
                         startOffset="25"
                         endOffset="25"/>
                 </fix-replace>
                 <fix-replace
-                    description="Replace with junit-v115 = { module = &quot;androidx.test.ext:junit&quot;, version.ref = &quot;androidxJunitVersion&quot; }..."
+                    description="Replace with androidx-test-ext-junit-v115 = { module = &quot;androidx.test.ext:junit&quot;, version.ref = &quot;androidxTestExtJunit2&quot; }..."
                     robot="true"
                     independent="true"
                     oldString="_lint_insert_begin_"
-                    replacement="junit-v115 = { module = &quot;androidx.test.ext:junit&quot;, version.ref = &quot;androidxJunitVersion&quot; }&#xA;">
+                    replacement="androidx-test-ext-junit-v115 = { module = &quot;androidx.test.ext:junit&quot;, version.ref = &quot;androidxTestExtJunit2&quot; }&#xA;">
                     <range
                         file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
-                        startOffset="649"
-                        endOffset="649"/>
+                        startOffset="270"
+                        endOffset="270"/>
                 </fix-replace>
                 <fix-replace
-                    description="Replace with libs.junit.v115"
+                    description="Replace with libs.androidx.test.ext.junit.v115"
                     robot="true"
                     independent="true"
-                    replacement="libs.junit.v115">
+                    replacement="libs.androidx.test.ext.junit.v115">
                     <range
                         file="${:app*projectDir}/build.gradle.kts"
-                        startOffset="2235"
-                        endOffset="2266"/>
+                        startOffset="2746"
+                        endOffset="2777"/>
                 </fix-replace>
             </fix-composite>
             <fix-replace
@@ -751,18 +751,18 @@
                 replacement="libs.androidx.junit">
                 <range
                     file="${:app*projectDir}/build.gradle.kts"
-                    startOffset="2235"
-                    endOffset="2266"/>
+                    startOffset="2746"
+                    endOffset="2777"/>
             </fix-replace>
         </fix-alternatives>
         <location
             file="${:app*projectDir}/build.gradle.kts"
-            line="83"
+            line="95"
             column="32"
-            startOffset="2236"
-            endLine="83"
+            startOffset="2747"
+            endLine="95"
             endColumn="61"
-            endOffset="2265"/>
+            endOffset="2776"/>
     </incident>
 
     <incident
@@ -771,40 +771,40 @@
         message="Use version catalog instead (androidx.test.espresso:espresso-core is already available as `androidx-espresso-core`, but using version 3.6.1 instead)">
         <fix-alternatives>
             <fix-composite
-                description="Replace with new library catalog declaration for espresso-core-v351"
+                description="Replace with new library catalog declaration for androidx-test-espresso-espresso-core-v351-x2"
                 robot="true"
                 independent="true">
                 <fix-replace
-                    description="Replace with androidxEspressoCore = &quot;3.5.1&quot;..."
+                    description="Replace with androidxTestEspressoEspressoCore = &quot;3.5.1&quot;..."
                     robot="true"
                     independent="true"
                     oldString="_lint_insert_begin_"
-                    replacement="androidxEspressoCore = &quot;3.5.1&quot;&#xA;">
+                    replacement="androidxTestEspressoEspressoCore = &quot;3.5.1&quot;&#xA;">
                     <range
                         file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
                         startOffset="25"
                         endOffset="25"/>
                 </fix-replace>
                 <fix-replace
-                    description="Replace with espresso-core-v351 = { module = &quot;androidx.test.espresso:espresso-core&quot;, version.ref = &quot;androidxEspressoCore&quot; }..."
+                    description="Replace with androidx-test-espresso-espresso-core-v351-x2 = { module = &quot;androidx.test.espresso:espresso-core&quot;, version.ref = &quot;androidxTestEspressoEspressoCore&quot; }..."
                     robot="true"
                     independent="true"
                     oldString="_lint_insert_begin_"
-                    replacement="espresso-core-v351 = { module = &quot;androidx.test.espresso:espresso-core&quot;, version.ref = &quot;androidxEspressoCore&quot; }&#xA;">
+                    replacement="androidx-test-espresso-espresso-core-v351-x2 = { module = &quot;androidx.test.espresso:espresso-core&quot;, version.ref = &quot;androidxTestEspressoEspressoCore&quot; }&#xA;">
                     <range
                         file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
                         startOffset="270"
                         endOffset="270"/>
                 </fix-replace>
                 <fix-replace
-                    description="Replace with libs.espresso.core.v351"
+                    description="Replace with libs.androidx.test.espresso.espresso.core.v351.x2"
                     robot="true"
                     independent="true"
-                    replacement="libs.espresso.core.v351">
+                    replacement="libs.androidx.test.espresso.espresso.core.v351.x2">
                     <range
                         file="${:app*projectDir}/build.gradle.kts"
-                        startOffset="2298"
-                        endOffset="2342"/>
+                        startOffset="2809"
+                        endOffset="2853"/>
                 </fix-replace>
             </fix-composite>
             <fix-replace
@@ -812,18 +812,18 @@
                 replacement="libs.androidx.espresso.core">
                 <range
                     file="${:app*projectDir}/build.gradle.kts"
-                    startOffset="2298"
-                    endOffset="2342"/>
+                    startOffset="2809"
+                    endOffset="2853"/>
             </fix-replace>
         </fix-alternatives>
         <location
             file="${:app*projectDir}/build.gradle.kts"
-            line="84"
+            line="96"
             column="32"
-            startOffset="2299"
-            endLine="84"
+            startOffset="2810"
+            endLine="96"
             endColumn="74"
-            endOffset="2341"/>
+            endOffset="2852"/>
     </incident>
 
     <incident
@@ -831,46 +831,46 @@
         severity="warning"
         message="Use version catalog instead">
         <fix-composite
-            description="Replace with new library catalog declaration for ui-test-junit4"
+            description="Replace with new library catalog declaration for androidx-compose-ui-ui-test-junit42"
             robot="true">
             <fix-replace
-                description="Replace with uiTestJunit4Version = &quot;1.6.0&quot;..."
+                description="Replace with androidxUiTestJunit4Version = &quot;1.6.0&quot;..."
                 robot="true"
                 oldString="_lint_insert_begin_"
-                replacement="uiTestJunit4Version = &quot;1.6.0&quot;&#xA;">
+                replacement="androidxUiTestJunit4Version = &quot;1.6.0&quot;&#xA;">
                 <range
                     file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
-                    startOffset="165"
-                    endOffset="165"/>
+                    startOffset="25"
+                    endOffset="25"/>
             </fix-replace>
             <fix-replace
-                description="Replace with ui-test-junit4 = { module = &quot;androidx.compose.ui:ui-test-junit4&quot;, version.ref = &quot;uiTestJunit4Version&quot; }..."
+                description="Replace with androidx-compose-ui-ui-test-junit42 = { module = &quot;androidx.compose.ui:ui-test-junit4&quot;, version.ref = &quot;androidxUiTestJunit4Version&quot; }..."
                 robot="true"
                 oldString="_lint_insert_begin_"
-                replacement="ui-test-junit4 = { module = &quot;androidx.compose.ui:ui-test-junit4&quot;, version.ref = &quot;uiTestJunit4Version&quot; }&#xA;">
+                replacement="androidx-compose-ui-ui-test-junit42 = { module = &quot;androidx.compose.ui:ui-test-junit4&quot;, version.ref = &quot;androidxUiTestJunit4Version&quot; }&#xA;">
                 <range
                     file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
-                    startOffset="747"
-                    endOffset="747"/>
+                    startOffset="178"
+                    endOffset="178"/>
             </fix-replace>
             <fix-replace
-                description="Replace with libs.ui.test.junit4"
+                description="Replace with libs.androidx.compose.ui.ui.test.junit42"
                 robot="true"
-                replacement="libs.ui.test.junit4">
+                replacement="libs.androidx.compose.ui.ui.test.junit42">
                 <range
                     file="${:app*projectDir}/build.gradle.kts"
-                    startOffset="2374"
-                    endOffset="2416"/>
+                    startOffset="2885"
+                    endOffset="2927"/>
             </fix-replace>
         </fix-composite>
         <location
             file="${:app*projectDir}/build.gradle.kts"
-            line="85"
+            line="97"
             column="32"
-            startOffset="2375"
-            endLine="85"
+            startOffset="2886"
+            endLine="97"
             endColumn="72"
-            endOffset="2415"/>
+            endOffset="2926"/>
     </incident>
 
     <incident
@@ -879,40 +879,40 @@
         message="Use version catalog instead (com.google.android.material:material is already available as `material`, but using version 1.12.0 instead)">
         <fix-alternatives>
             <fix-composite
-                description="Replace with new library catalog declaration for google-material-v1110"
+                description="Replace with new library catalog declaration for com-google-android-material-material-v1110-x2"
                 robot="true"
                 independent="true">
                 <fix-replace
-                    description="Replace with googleMaterial = &quot;1.11.0&quot;..."
+                    description="Replace with comGoogleAndroidMaterialMaterial = &quot;1.11.0&quot;..."
                     robot="true"
                     independent="true"
                     oldString="_lint_insert_begin_"
-                    replacement="googleMaterial = &quot;1.11.0&quot;&#xA;">
+                    replacement="comGoogleAndroidMaterialMaterial = &quot;1.11.0&quot;&#xA;">
                     <range
                         file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
                         startOffset="25"
                         endOffset="25"/>
                 </fix-replace>
                 <fix-replace
-                    description="Replace with google-material-v1110 = { module = &quot;com.google.android.material:material&quot;, version.ref = &quot;googleMaterial&quot; }..."
+                    description="Replace with com-google-android-material-material-v1110-x2 = { module = &quot;com.google.android.material:material&quot;, version.ref = &quot;comGoogleAndroidMaterialMaterial&quot; }..."
                     robot="true"
                     independent="true"
                     oldString="_lint_insert_begin_"
-                    replacement="google-material-v1110 = { module = &quot;com.google.android.material:material&quot;, version.ref = &quot;googleMaterial&quot; }&#xA;">
+                    replacement="com-google-android-material-material-v1110-x2 = { module = &quot;com.google.android.material:material&quot;, version.ref = &quot;comGoogleAndroidMaterialMaterial&quot; }&#xA;">
                     <range
                         file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
                         startOffset="270"
                         endOffset="270"/>
                 </fix-replace>
                 <fix-replace
-                    description="Replace with libs.google.material.v1110"
+                    description="Replace with libs.com.google.android.material.material.v1110.x2"
                     robot="true"
                     independent="true"
-                    replacement="libs.google.material.v1110">
+                    replacement="libs.com.google.android.material.material.v1110.x2">
                     <range
                         file="${:app*projectDir}/build.gradle.kts"
-                        startOffset="2438"
-                        endOffset="2483"/>
+                        startOffset="2949"
+                        endOffset="2994"/>
                 </fix-replace>
             </fix-composite>
             <fix-replace
@@ -920,18 +920,18 @@
                 replacement="libs.material">
                 <range
                     file="${:app*projectDir}/build.gradle.kts"
-                    startOffset="2438"
-                    endOffset="2483"/>
+                    startOffset="2949"
+                    endOffset="2994"/>
             </fix-replace>
         </fix-alternatives>
         <location
             file="${:app*projectDir}/build.gradle.kts"
-            line="87"
+            line="99"
             column="21"
-            startOffset="2439"
-            endLine="87"
+            startOffset="2950"
+            endLine="99"
             endColumn="64"
-            endOffset="2482"/>
+            endOffset="2993"/>
     </incident>
 
     <incident
@@ -939,46 +939,46 @@
         severity="warning"
         message="Use version catalog instead">
         <fix-composite
-            description="Replace with new library catalog declaration for google-firebase-bom"
+            description="Replace with new library catalog declaration for com-google-firebase-firebase-bom2"
             robot="true">
             <fix-replace
-                description="Replace with firebaseBomVersion = &quot;33.11.0&quot;..."
+                description="Replace with googleFirebaseBomVersion = &quot;33.11.0&quot;..."
                 robot="true"
                 oldString="_lint_insert_begin_"
-                replacement="firebaseBomVersion = &quot;33.11.0&quot;&#xA;">
+                replacement="googleFirebaseBomVersion = &quot;33.11.0&quot;&#xA;">
                 <range
                     file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
                     startOffset="25"
                     endOffset="25"/>
             </fix-replace>
             <fix-replace
-                description="Replace with google-firebase-bom = { module = &quot;com.google.firebase:firebase-bom&quot;, version.ref = &quot;firebaseBomVersion&quot; }..."
+                description="Replace with com-google-firebase-firebase-bom2 = { module = &quot;com.google.firebase:firebase-bom&quot;, version.ref = &quot;googleFirebaseBomVersion&quot; }..."
                 robot="true"
                 oldString="_lint_insert_begin_"
-                replacement="google-firebase-bom = { module = &quot;com.google.firebase:firebase-bom&quot;, version.ref = &quot;firebaseBomVersion&quot; }&#xA;">
+                replacement="com-google-firebase-firebase-bom2 = { module = &quot;com.google.firebase:firebase-bom&quot;, version.ref = &quot;googleFirebaseBomVersion&quot; }&#xA;">
                 <range
                     file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
                     startOffset="270"
                     endOffset="270"/>
             </fix-replace>
             <fix-replace
-                description="Replace with libs.google.firebase.bom"
+                description="Replace with libs.com.google.firebase.firebase.bom2"
                 robot="true"
-                replacement="libs.google.firebase.bom">
+                replacement="libs.com.google.firebase.firebase.bom2">
                 <range
                     file="${:app*projectDir}/build.gradle.kts"
-                    startOffset="2505"
-                    endOffset="2557"/>
+                    startOffset="3016"
+                    endOffset="3068"/>
             </fix-replace>
         </fix-composite>
         <location
             file="${:app*projectDir}/build.gradle.kts"
-            line="89"
+            line="101"
             column="20"
-            startOffset="2505"
-            endLine="89"
+            startOffset="3016"
+            endLine="101"
             endColumn="72"
-            endOffset="2557"/>
+            endOffset="3068"/>
     </incident>
 
     <incident
@@ -987,12 +987,12 @@
         message="Use version catalog instead">
         <location
             file="${:app*projectDir}/build.gradle.kts"
-            line="90"
+            line="102"
             column="21"
-            startOffset="2579"
-            endLine="90"
+            startOffset="3090"
+            endLine="102"
             endColumn="59"
-            endOffset="2617"/>
+            endOffset="3128"/>
     </incident>
 
     <incident
@@ -1000,46 +1000,46 @@
         severity="warning"
         message="Use version catalog instead">
         <fix-composite
-            description="Replace with new library catalog declaration for io-coil-kt-coil-compose4"
+            description="Replace with new library catalog declaration for io-coil-kt-coil-compose10"
             robot="true">
             <fix-replace
-                description="Replace with ioCoilKtCoilCompose2 = &quot;2.5.0&quot;..."
+                description="Replace with ioCoilKtCoilCompose8 = &quot;2.5.0&quot;..."
                 robot="true"
                 oldString="_lint_insert_begin_"
-                replacement="ioCoilKtCoilCompose2 = &quot;2.5.0&quot;&#xA;">
+                replacement="ioCoilKtCoilCompose8 = &quot;2.5.0&quot;&#xA;">
                 <range
                     file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
                     startOffset="25"
                     endOffset="25"/>
             </fix-replace>
             <fix-replace
-                description="Replace with io-coil-kt-coil-compose4 = { module = &quot;io.coil-kt:coil-compose&quot;, version.ref = &quot;ioCoilKtCoilCompose2&quot; }..."
+                description="Replace with io-coil-kt-coil-compose10 = { module = &quot;io.coil-kt:coil-compose&quot;, version.ref = &quot;ioCoilKtCoilCompose8&quot; }..."
                 robot="true"
                 oldString="_lint_insert_begin_"
-                replacement="io-coil-kt-coil-compose4 = { module = &quot;io.coil-kt:coil-compose&quot;, version.ref = &quot;ioCoilKtCoilCompose2&quot; }&#xA;">
+                replacement="io-coil-kt-coil-compose10 = { module = &quot;io.coil-kt:coil-compose&quot;, version.ref = &quot;ioCoilKtCoilCompose8&quot; }&#xA;">
                 <range
                     file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
                     startOffset="270"
                     endOffset="270"/>
             </fix-replace>
             <fix-replace
-                description="Replace with libs.io.coil.kt.coil.compose4"
+                description="Replace with libs.io.coil.kt.coil.compose10"
                 robot="true"
-                replacement="libs.io.coil.kt.coil.compose4">
+                replacement="libs.io.coil.kt.coil.compose10">
                 <range
                     file="${:app*projectDir}/build.gradle.kts"
-                    startOffset="2757"
-                    endOffset="2788"/>
+                    startOffset="3268"
+                    endOffset="3299"/>
             </fix-replace>
         </fix-composite>
         <location
             file="${:app*projectDir}/build.gradle.kts"
-            line="96"
+            line="108"
             column="21"
-            startOffset="2758"
-            endLine="96"
+            startOffset="3269"
+            endLine="108"
             endColumn="50"
-            endOffset="2787"/>
+            endOffset="3298"/>
     </incident>
 
     <incident
@@ -1047,46 +1047,46 @@
         severity="warning"
         message="Use version catalog instead">
         <fix-composite
-            description="Replace with new library catalog declaration for google-accompanist-swiperefresh"
+            description="Replace with new library catalog declaration for com-google-accompanist-accompanist-swiperefresh2"
             robot="true">
             <fix-replace
-                description="Replace with accompanistSwiperefreshVersion = &quot;0.30.1&quot;..."
+                description="Replace with googleAccompanistSwiperefreshVersion = &quot;0.30.1&quot;..."
                 robot="true"
                 oldString="_lint_insert_begin_"
-                replacement="accompanistSwiperefreshVersion = &quot;0.30.1&quot;&#xA;">
+                replacement="googleAccompanistSwiperefreshVersion = &quot;0.30.1&quot;&#xA;">
                 <range
                     file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
-                    startOffset="11"
-                    endOffset="11"/>
+                    startOffset="25"
+                    endOffset="25"/>
             </fix-replace>
             <fix-replace
-                description="Replace with google-accompanist-swiperefresh = { module = &quot;com.google.accompanist:accompanist-swiperefresh&quot;, version.ref = &quot;accompanistSwiperefreshVersion&quot; }..."
+                description="Replace with com-google-accompanist-accompanist-swiperefresh2 = { module = &quot;com.google.accompanist:accompanist-swiperefresh&quot;, version.ref = &quot;googleAccompanistSwiperefreshVersion&quot; }..."
                 robot="true"
                 oldString="_lint_insert_begin_"
-                replacement="google-accompanist-swiperefresh = { module = &quot;com.google.accompanist:accompanist-swiperefresh&quot;, version.ref = &quot;accompanistSwiperefreshVersion&quot; }&#xA;">
+                replacement="com-google-accompanist-accompanist-swiperefresh2 = { module = &quot;com.google.accompanist:accompanist-swiperefresh&quot;, version.ref = &quot;googleAccompanistSwiperefreshVersion&quot; }&#xA;">
                 <range
                     file="$HOME/AndroidStudioProjects/YouTubeMusicConnect/gradle/libs.versions.toml"
                     startOffset="270"
                     endOffset="270"/>
             </fix-replace>
             <fix-replace
-                description="Replace with libs.google.accompanist.swiperefresh"
+                description="Replace with libs.com.google.accompanist.accompanist.swiperefresh2"
                 robot="true"
-                replacement="libs.google.accompanist.swiperefresh">
+                replacement="libs.com.google.accompanist.accompanist.swiperefresh2">
                 <range
                     file="${:app*projectDir}/build.gradle.kts"
-                    startOffset="2810"
-                    endOffset="2866"/>
+                    startOffset="3321"
+                    endOffset="3377"/>
             </fix-replace>
         </fix-composite>
         <location
             file="${:app*projectDir}/build.gradle.kts"
-            line="98"
+            line="110"
             column="21"
-            startOffset="2811"
-            endLine="98"
+            startOffset="3322"
+            endLine="110"
             endColumn="75"
-            endOffset="2865"/>
+            endOffset="3376"/>
     </incident>
 
     <incident
@@ -1121,31 +1121,31 @@
             replacement="4.4.2"/>
         <location
             file="${:app*projectDir}/build.gradle.kts"
-            line="10"
+            line="19"
             column="20"
-            startOffset="208"
-            endLine="10"
+            startOffset="536"
+            endLine="19"
             endColumn="57"
-            endOffset="245"/>
+            endOffset="573"/>
     </incident>
 
     <incident
         id="GradleDependency"
         severity="warning"
-        message="A newer version of androidx.compose:compose-bom than 2024.03.00 is available: 2025.03.00">
+        message="A newer version of androidx.compose:compose-bom than 2024.03.00 is available: 2025.03.01">
         <fix-replace
-            description="Change to 2025.03.00"
+            description="Change to 2025.03.01"
             family="Update versions"
             oldString="2024.03.00"
-            replacement="2025.03.00"/>
+            replacement="2025.03.01"/>
         <location
             file="${:app*projectDir}/build.gradle.kts"
-            line="51"
+            line="63"
             column="20"
-            startOffset="1070"
-            endLine="51"
+            startOffset="1581"
+            endLine="63"
             endColumn="71"
-            endOffset="1121"/>
+            endOffset="1632"/>
     </incident>
 
     <incident
@@ -1159,12 +1159,12 @@
             replacement="1.7.8"/>
         <location
             file="${:app*projectDir}/build.gradle.kts"
-            line="53"
+            line="65"
             column="21"
-            startOffset="1188"
-            endLine="53"
+            startOffset="1699"
+            endLine="65"
             endColumn="65"
-            endOffset="1232"/>
+            endOffset="1743"/>
     </incident>
 
     <incident
@@ -1178,12 +1178,12 @@
             replacement="1.10.1"/>
         <location
             file="${:app*projectDir}/build.gradle.kts"
-            line="55"
+            line="67"
             column="21"
-            startOffset="1314"
-            endLine="55"
+            startOffset="1825"
+            endLine="67"
             endColumn="61"
-            endOffset="1354"/>
+            endOffset="1865"/>
     </incident>
 
     <incident
@@ -1197,12 +1197,12 @@
             replacement="2.8.9"/>
         <location
             file="${:app*projectDir}/build.gradle.kts"
-            line="58"
+            line="70"
             column="21"
-            startOffset="1406"
-            endLine="58"
+            startOffset="1917"
+            endLine="70"
             endColumn="65"
-            endOffset="1450"/>
+            endOffset="1961"/>
     </incident>
 
     <incident
@@ -1216,12 +1216,12 @@
             replacement="4.12.0"/>
         <location
             file="${:app*projectDir}/build.gradle.kts"
-            line="68"
+            line="80"
             column="21"
-            startOffset="1749"
-            endLine="68"
+            startOffset="2260"
+            endLine="80"
             endColumn="55"
-            endOffset="1783"/>
+            endOffset="2294"/>
     </incident>
 
     <incident
@@ -1235,12 +1235,12 @@
             replacement="21.3.0"/>
         <location
             file="${:app*projectDir}/build.gradle.kts"
-            line="71"
+            line="83"
             column="21"
-            startOffset="1829"
-            endLine="71"
+            startOffset="2340"
+            endLine="83"
             endColumn="69"
-            endOffset="1877"/>
+            endOffset="2388"/>
     </incident>
 
     <incident
@@ -1254,12 +1254,12 @@
             replacement="2.5.0"/>
         <location
             file="${:app*projectDir}/build.gradle.kts"
-            line="78"
+            line="90"
             column="21"
-            startOffset="2112"
-            endLine="78"
+            startOffset="2623"
+            endLine="90"
             endColumn="50"
-            endOffset="2141"/>
+            endOffset="2652"/>
     </incident>
 
     <incident
@@ -1273,12 +1273,12 @@
             replacement="1.2.1"/>
         <location
             file="${:app*projectDir}/build.gradle.kts"
-            line="83"
+            line="95"
             column="32"
-            startOffset="2236"
-            endLine="83"
+            startOffset="2747"
+            endLine="95"
             endColumn="61"
-            endOffset="2265"/>
+            endOffset="2776"/>
     </incident>
 
     <incident
@@ -1292,12 +1292,12 @@
             replacement="3.6.1"/>
         <location
             file="${:app*projectDir}/build.gradle.kts"
-            line="84"
+            line="96"
             column="32"
-            startOffset="2299"
-            endLine="84"
+            startOffset="2810"
+            endLine="96"
             endColumn="74"
-            endOffset="2341"/>
+            endOffset="2852"/>
     </incident>
 
     <incident
@@ -1311,12 +1311,12 @@
             replacement="1.7.8"/>
         <location
             file="${:app*projectDir}/build.gradle.kts"
-            line="85"
+            line="97"
             column="32"
-            startOffset="2375"
-            endLine="85"
+            startOffset="2886"
+            endLine="97"
             endColumn="72"
-            endOffset="2415"/>
+            endOffset="2926"/>
     </incident>
 
     <incident
@@ -1330,12 +1330,12 @@
             replacement="1.12.0"/>
         <location
             file="${:app*projectDir}/build.gradle.kts"
-            line="87"
+            line="99"
             column="21"
-            startOffset="2439"
-            endLine="87"
+            startOffset="2950"
+            endLine="99"
             endColumn="64"
-            endOffset="2482"/>
+            endOffset="2993"/>
     </incident>
 
     <incident
