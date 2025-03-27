@@ -95,6 +95,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import java.util.concurrent.TimeUnit
 import kotlin.math.log
 
 const val API_BASE_URL = "https://youtubeconnect.app.br/api/"
@@ -564,7 +565,11 @@ class MainActivity : ComponentActivity() {
 
         val ipBase = gateway.substringBeforeLast(".")
 
-        val client = OkHttpClient()
+        val client = OkHttpClient.Builder()
+            .connectTimeout(500, TimeUnit.MILLISECONDS)
+            .readTimeout(500, TimeUnit.MILLISECONDS)
+            .writeTimeout(500, TimeUnit.MILLISECONDS)
+            .build()
         for (i in 1..254) {
             val ip = "$ipBase.$i"
             val url = "http://$ip:$COMPANION_PORT/metadata"
