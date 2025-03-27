@@ -7,6 +7,20 @@
                     boolean="true"/>
             </map>
     </map>
+    <map id="UnsafeImplicitIntentLaunch">
+            <map id="actionsSent">
+                    <map id="android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS (used to start an activity)">
+                        <location id="0"
+                            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/saulocastrodev/youtubemusicconnect/MainActivity.kt"
+                            line="1316"
+                            column="59"
+                            startOffset="56712"
+                            endLine="1316"
+                            endColumn="123"
+                            endOffset="56776"/>
+                    </map>
+            </map>
+    </map>
     <map id="UnusedResources">
         <location id="R.mipmap.ic_shuffle"
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-hdpi/ic_shuffle.png"/>

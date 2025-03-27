@@ -296,6 +296,7 @@
   <io.fabric.sdk.android/>
   <org.chromium.net/>
   <org.jetbrains.kotlin/>
+  <org.multipaz/>
   <tools.base.build-system.debug/>
   <zipflinger/>
 </metadata>

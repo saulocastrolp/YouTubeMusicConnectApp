@@ -437,17 +437,22 @@ class MainActivity : ComponentActivity() {
 
     fun getNowPlayingFromMediaSession(context: Context): Pair<String, String>? {
         val mediaSessionManager = context.getSystemService(Context.MEDIA_SESSION_SERVICE) as MediaSessionManager
-        val controllers = mediaSessionManager.getActiveSessions(ComponentName(context, NotificationListener::class.java))
 
-        controllers.forEach { controller ->
-            val metadata = controller.metadata
-            if (metadata != null) {
-                val title = metadata.getString(MediaMetadata.METADATA_KEY_TITLE) ?: ""
-                val artist = metadata.getString(MediaMetadata.METADATA_KEY_ARTIST) ?: ""
-                if (title.isNotBlank() && artist.isNotBlank()) {
-                    return title to artist
+        try {
+            val controllers = mediaSessionManager.getActiveSessions(ComponentName(context, NotificationListener::class.java))
+            controllers.forEach { controller ->
+                val metadata = controller.metadata
+                if (metadata != null) {
+                    val title = metadata.getString(MediaMetadata.METADATA_KEY_TITLE) ?: ""
+                    val artist = metadata.getString(MediaMetadata.METADATA_KEY_ARTIST) ?: ""
+                    if (title.isNotBlank() && artist.isNotBlank()) {
+                        return title to artist
+                    }
                 }
             }
+        } catch (e: SecurityException) {
+            Log.e("MediaSession", "Permissão insuficiente para acessar sessões de mídia", e)
+            // fallback para NotificationListenerService
         }
         return null
     }
