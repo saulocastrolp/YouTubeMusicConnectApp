@@ -3,10 +3,14 @@ package com.saulocastrodev.youtubemusicconnect
 import com.saulocastrodev.youtubemusicconnect.BuildConfig
 
 import android.Manifest
+import android.content.ComponentName
 import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
+import android.media.MediaMetadata
+import android.media.session.MediaSessionManager
 import android.net.wifi.WifiManager
 import android.os.Build
 import android.os.Bundle
@@ -37,6 +41,8 @@ import retrofit2.http.Body
 import retrofit2.http.POST
 import java.net.InetAddress
 import android.net.ConnectivityManager
+import android.provider.Settings
+import android.text.TextUtils
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.RequiresApi
@@ -83,8 +89,13 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Refresh
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import kotlin.math.log
 
 const val API_BASE_URL = "https://youtubeconnect.app.br/api/"
 const val COMPANION_PORT = 9863
@@ -421,6 +432,86 @@ class MainActivity : ComponentActivity() {
                 .fillMaxWidth()
                 .padding(vertical = 8.dp)
         )
+    }
+
+
+    fun getNowPlayingFromMediaSession(context: Context): Pair<String, String>? {
+        val mediaSessionManager = context.getSystemService(Context.MEDIA_SESSION_SERVICE) as MediaSessionManager
+        val controllers = mediaSessionManager.getActiveSessions(ComponentName(context, NotificationListener::class.java))
+
+        controllers.forEach { controller ->
+            val metadata = controller.metadata
+            if (metadata != null) {
+                val title = metadata.getString(MediaMetadata.METADATA_KEY_TITLE) ?: ""
+                val artist = metadata.getString(MediaMetadata.METADATA_KEY_ARTIST) ?: ""
+                if (title.isNotBlank() && artist.isNotBlank()) {
+                    return title to artist
+                }
+            }
+        }
+        return null
+    }
+
+    fun isNotificationListenerEnabled(context: Context): Boolean {
+        val cn = ComponentName(context, YTMusicNotificationListener::class.java)
+        val flat = Settings.Secure.getString(context.contentResolver, "enabled_notification_listeners")
+        return !TextUtils.isEmpty(flat) && flat.contains(cn.flattenToString())
+    }
+
+
+    fun searchYouTubeVideo(
+        title: String,
+        artist: String,
+        apiKey: String,
+        onResult: (videoId: String?, channelId: String?, playlistId: String?) -> Unit
+    ) {
+        val query = "$title $artist"
+        val searchUrl = "https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}&key=$youtubeKey&type=video&maxResults=1"
+
+        CoroutineScope(Dispatchers.IO).launch {
+            try {
+                val client = OkHttpClient()
+                val searchRequest = Request.Builder().url(searchUrl).build()
+                val searchResponse = client.newCall(searchRequest).execute()
+                val body = searchResponse.body?.string()
+                val json = JSONObject(body ?: "")
+                val items = json.getJSONArray("items")
+
+                if (items.length() > 0) {
+                    val item = items.getJSONObject(0)
+                    val videoId = item.getJSONObject("id").getString("videoId")
+                    val channelId = item.getJSONObject("snippet").getString("channelId")
+
+                    // Segunda tentativa: buscar uma playlist relacionada a esse vídeo
+                    val playlistSearchUrl =
+                        "https://www.googleapis.com/youtube/v3/search?part=snippet&q=$title&type=playlist&maxResults=1&key=$youtubeKey"
+                    val playlistRequest = Request.Builder().url(playlistSearchUrl).build()
+                    val playlistResponse = client.newCall(playlistRequest).execute()
+                    val playlistBody = playlistResponse.body?.string()
+                    val playlistJson = JSONObject(playlistBody ?: "")
+                    Log.i("Playlist JSON", playlistJson.toString())
+                    Log.i("Video ID", videoId)
+                    val playlistItems = playlistJson.getJSONArray("items")
+
+                    val playlistId: String? = if (playlistItems.length() > 0) {
+                        playlistItems.getJSONObject(0).getJSONObject("id").getString("playlistId")
+                    } else null
+
+                    withContext(Dispatchers.Main) {
+                        onResult(videoId, channelId, playlistId)
+                    }
+                } else {
+                    withContext(Dispatchers.Main) {
+                        onResult(null, null, null)
+                    }
+                }
+            } catch (e: Exception) {
+                Log.e("YTSearch", "Erro ao consultar YouTube API", e)
+                withContext(Dispatchers.Main) {
+                    onResult(null, null, null)
+                }
+            }
+        }
     }
 
     private suspend fun isActiveCompanionServer(): Boolean = withContext(Dispatchers.IO) {
@@ -771,15 +862,67 @@ class MainActivity : ComponentActivity() {
         }
     }
 
+    @Composable
+    fun SyncButton(title: String, artist: String, onClick: () -> Unit) {
+        Column(horizontalAlignment = Alignment.CenterHorizontally) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Icon(Icons.Default.Refresh, contentDescription = "Sincronizar", tint = colorResource(id = R.color.white))
+                Spacer(modifier = Modifier.width(8.dp))
+                Column {
+                    Text(text = title, color = colorResource(id = R.color.white))
+                    Text(text = artist, color = colorResource(id = R.color.white), fontSize = 12.sp)
+                }
+            }
+            Spacer(modifier = Modifier.height(8.dp))
+            Button(
+                onClick = onClick,
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = colorResource(id = R.color.red),
+                    contentColor = colorResource(id = R.color.white)
+                )
+            ) {
+                Text("Sincronizar com Desktop")
+            }
+        }
+    }
 
     @RequiresApi(Build.VERSION_CODES.Q)
     @Composable
     fun MainScreen(user: UserInfo?, onLogout: () -> Unit) {
 
         var isCompanionActive by remember { mutableStateOf<Boolean?>(null) }
+        var capturedSongTitle by remember { mutableStateOf<String?>(null) }
+        var capturedSongArtist by remember { mutableStateOf<String?>(null) }
+
+        val context = LocalContext.current
+        LaunchedEffect(Unit) {
+            while (true) {
+                delay(1000) // verifica a cada segundo (ajuste conforme necessário)
+
+                if (isNotificationListenerEnabled(context)) {
+                    val info = getNowPlayingFromMediaSession(context)
+                    if (info != null) {
+                        capturedSongTitle = info.first
+                        capturedSongArtist = info.second
+                    } else {
+                        capturedSongTitle = NotificationListener.lastSongTitle
+                        capturedSongArtist = NotificationListener.lastSongArtist
+                    }
+                }
+            }
+        }
+
 
         LaunchedEffect(Unit) {
             isCompanionActive = isActiveCompanionServer()
+            val info = getNowPlayingFromMediaSession(context)
+            if (info != null) {
+                val (title, artist) = info
+                capturedSongTitle = title
+                capturedSongArtist = artist
+            } else {
+                Log.i("Sync", "Nenhuma música ativa encontrada via MediaSession")
+            }
         }
 
         if (isScanning) {
@@ -884,7 +1027,12 @@ class MainActivity : ComponentActivity() {
                     val imageModifier = Modifier.size(120.dp)
 
                     val imageUrl: String? = try {
-                        metadata.video?.thumbnails?.get(3)?.url
+                        if (metadata.video?.videoType?.toInt() == 1) {
+                            metadata.video?.thumbnails?.get(0)?.url
+                        } else {
+                            metadata.video?.thumbnails?.get(3)?.url
+                        }
+
                     } catch (e: Exception) {
                         Log.i("Carregando Imagem", "🎵Não foi possível obter a URL da imagem", e)
                         null
@@ -914,7 +1062,13 @@ class MainActivity : ComponentActivity() {
                                 onClick = {
                                     lifecycleScope.launch(Dispatchers.IO) {
                                         try {
-                                            sendControlCommand("playPause")
+                                            //Log.i("TrackAtate", metadata.player.trackState?.toInt().toString())
+                                            if (metadata.player.trackState?.toInt() == 1) {
+                                                sendControlCommand("playPause")
+                                            } else {
+                                                sendControlCommand("play")
+                                            }
+
                                         } catch (e: Exception) {
                                             Log.e("CompanionAPI", "Erro ao enviar comando", e)
                                         }
@@ -1147,15 +1301,77 @@ class MainActivity : ComponentActivity() {
                             }
                         }
                     }
+
+                    Row {
+                        if (!isNotificationListenerEnabled(context)) {
+                            Button(
+                                onClick = {
+                                    lifecycleScope.launch(Dispatchers.IO) {
+                                        try {
+                                            startActivity(Intent("android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS"))
+                                        } catch (e: Exception) {
+                                            Log.e(
+                                                "Notification Listener",
+                                                "Erro ao pedir permissão de notificação ao usuário",
+                                                e
+                                            )
+                                        }
+                                    }
+                                },
+                                colors = ButtonDefaults.buttonColors(
+                                    containerColor = colorResource(id = R.color.red),
+                                    contentColor = colorResource(id = R.color.white)
+                                )
+                            ) {
+                                Text("Habilitar Notificação para capturar musica do youtube music!")
+                            }
+                        }
+                    }
+
+                    Spacer(modifier = Modifier.height(24.dp))
+
+                    // Exibe botão de sincronização caso a música tenha sido capturada
+                    capturedSongTitle?.let { title ->
+                        capturedSongArtist?.let { artist ->
+                            SyncButton(title = title, artist = artist) {
+                                lifecycleScope.launch(Dispatchers.IO) {
+                                    searchYouTubeVideo(title, artist, youtubeKey) { videoId, channelId, playlistId ->
+                                        if (videoId != null && channelId != null) {
+                                            Log.i("Resultado", "Vídeo: $videoId - Canal: $channelId")
+
+                                            var playlistPadraoId = "RDAMVM${videoId}";
+
+                                            val json = JSONObject().apply {
+                                                put("videoId", videoId)
+                                                put("playlistId", playlistPadraoId)
+                                            }
+
+                                            // Aqui é onde corrigimos — lançamos uma coroutine dentro do callback
+                                            lifecycleScope.launch(Dispatchers.IO) {
+                                                try {
+                                                    sendControlCommand("changeVideo", json)
+                                                } catch (e: Exception) {
+                                                    Log.e("Sync", "Erro ao sincronizar com o Desktop", e)
+                                                }
+                                            }
+                                        } else {
+                                            Log.w("Resultado", "Não foi possível obter o vídeo")
+                                        }
+                                    }
+                                }
+                            }
+                            Spacer(modifier = Modifier.height(24.dp))
+                        }
+                    }
                 }
             }
         }
 
     }
 
-    private fun sendControlCommand(command: String, data: Any? = null) {
-        val user = userPrefs.getUser();
-        val tokenYtmd = user?.tokenYtmd;
+    private suspend fun sendControlCommand(command: String, data: Any? = null) {
+        val user = userPrefs.getUser()
+        val tokenYtmd = user?.tokenYtmd
         val ip = companionIP ?: return
 
         try {
@@ -1164,26 +1380,31 @@ class MainActivity : ComponentActivity() {
 
             val jsonBody = JSONObject().apply {
                 put("command", command)
-                if (data != null) put("data", data)
-            }
-
-            val requestBody = jsonBody.toString().toRequestBody("application/json".toMediaType())
-            Log.i("API Companion Server", "Enviado com sucesso: ${jsonBody.toString()}")
-
-            val request = Request.Builder()
-                .url(url)
-                .addHeader("Authorization", "$tokenYtmd")
-                .post(requestBody)
-                .build()
-
-            client.newCall(request).execute().use { response ->
-                if (!response.isSuccessful) {
-                    Log.e("API Companion Server", "Erro ao enviar comando: ${response.code}")
+                when (data) {
+                    is JSONObject -> put("data", data) // já é um JSON estruturado
+                    is String, is Int, is Boolean, is Double -> put("data", data) // tipos primitivos
+                    null -> {} // nada
+                    else -> put("data", data.toString()) // fallback genérico
                 }
             }
 
+            Log.i("JSON Command", jsonBody.toString())
+
+            val body = jsonBody.toString().toRequestBody("application/json".toMediaType())
+            val request = Request.Builder()
+                .url(url)
+                .addHeader("Authorization", "$tokenYtmd")
+                .post(body)
+                .build()
+
+            val response = withContext(Dispatchers.IO) {
+                client.newCall(request).execute()
+            }
+            Log.i("Resposta API:", response.toString())
+            response.close()
+
         } catch (e: Exception) {
-            Log.e("API Companion Server", "Erro ao enviar comando", e)
+            Log.e("CompanionAPI", "Erro ao enviar comando", e)
         }
     }
 
