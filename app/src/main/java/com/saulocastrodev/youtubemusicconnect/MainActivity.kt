@@ -590,6 +590,7 @@ class MainActivity : ComponentActivity() {
                 response.close()
             } catch (e: Exception) {
                 Log.w("Network Scan", "Falha ao tentar $url", e)
+                isScanning = false
             }
         }
 
@@ -974,7 +975,11 @@ class MainActivity : ComponentActivity() {
                             onClick = {
                                 lifecycleScope.launch(Dispatchers.IO) {
                                     isScanning = true
-                                    scanNetworkForCompanion()
+                                    withContext(Dispatchers.IO) {
+                                        scanNetworkForCompanion()
+                                    }
+                                    isCompanionActive = isActiveCompanionServer()
+                                    isScanning = false
                                 }
                             },
                             colors = ButtonDefaults.buttonColors(
@@ -1269,7 +1274,11 @@ class MainActivity : ComponentActivity() {
                                         onClick = {
                                             lifecycleScope.launch(Dispatchers.IO) {
                                                 isScanning = true
-                                                scanNetworkForCompanion()
+                                                withContext(Dispatchers.IO) {
+                                                    scanNetworkForCompanion()
+                                                }
+                                                isCompanionActive = isActiveCompanionServer()
+                                                isScanning = false
                                             }
                                         },
                                         colors = ButtonDefaults.buttonColors(
@@ -1296,7 +1305,6 @@ class MainActivity : ComponentActivity() {
                                     Button(
                                         onClick = {
                                             lifecycleScope.launch(Dispatchers.IO) {
-                                                isScanning = true
                                                 startWebSocket()
                                             }
                                         },
